@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		957340211C783CDB00D98057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340201C783CDB00D98057 /* AppDelegate.swift */; };
+		957340231C783CDB00D98057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340221C783CDB00D98057 /* ViewController.swift */; };
+		957340261C783CDB00D98057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957340241C783CDB00D98057 /* Main.storyboard */; };
+		957340281C783CDB00D98057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957340271C783CDB00D98057 /* Assets.xcassets */; };
+		9573402B1C783CDB00D98057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957340291C783CDB00D98057 /* LaunchScreen.storyboard */; };
+		957340361C783CDB00D98057 /* vocabularynotebook2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340351C783CDB00D98057 /* vocabularynotebook2Tests.swift */; };
+		957340411C783CDB00D98057 /* vocabularynotebook2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340401C783CDB00D98057 /* vocabularynotebook2UITests.swift */; };
+		9573404F1C783E4900D98057 /* MakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573404E1C783E4900D98057 /* MakeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		957340511C78417000D98057 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957340501C78417000D98057 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		957340321C783CDB00D98057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 957340151C783CDB00D98057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9573401C1C783CDB00D98057;
+			remoteInfo = vocabularynotebook2;
+		};
+		9573403D1C783CDB00D98057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 957340151C783CDB00D98057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9573401C1C783CDB00D98057;
+			remoteInfo = vocabularynotebook2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9573401D1C783CDB00D98057 /* vocabularynotebook2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocabularynotebook2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		957340201C783CDB00D98057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		957340221C783CDB00D98057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		957340251C783CDB00D98057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		957340271C783CDB00D98057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9573402A1C783CDB00D98057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9573402C1C783CDB00D98057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957340311C783CDB00D98057 /* vocabularynotebook2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vocabularynotebook2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		957340351C783CDB00D98057 /* vocabularynotebook2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocabularynotebook2Tests.swift; sourceTree = "<group>"; };
+		957340371C783CDB00D98057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9573403C1C783CDB00D98057 /* vocabularynotebook2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vocabularynotebook2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		957340401C783CDB00D98057 /* vocabularynotebook2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocabularynotebook2UITests.swift; sourceTree = "<group>"; };
+		957340421C783CDB00D98057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9573404E1C783E4900D98057 /* MakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeViewController.swift; path = ../MakeViewController.swift; sourceTree = "<group>"; };
+		957340501C78417000D98057 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9573401A1C783CDB00D98057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957340511C78417000D98057 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9573402E1C783CDB00D98057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957340391C783CDB00D98057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		957340141C783CDB00D98057 = {
+			isa = PBXGroup;
+			children = (
+				957340501C78417000D98057 /* AVFoundation.framework */,
+				9573401F1C783CDB00D98057 /* vocabularynotebook2 */,
+				957340341C783CDB00D98057 /* vocabularynotebook2Tests */,
+				9573403F1C783CDB00D98057 /* vocabularynotebook2UITests */,
+				9573401E1C783CDB00D98057 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9573401E1C783CDB00D98057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9573401D1C783CDB00D98057 /* vocabularynotebook2.app */,
+				957340311C783CDB00D98057 /* vocabularynotebook2Tests.xctest */,
+				9573403C1C783CDB00D98057 /* vocabularynotebook2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9573401F1C783CDB00D98057 /* vocabularynotebook2 */ = {
+			isa = PBXGroup;
+			children = (
+				957340201C783CDB00D98057 /* AppDelegate.swift */,
+				957340221C783CDB00D98057 /* ViewController.swift */,
+				9573404E1C783E4900D98057 /* MakeViewController.swift */,
+				957340241C783CDB00D98057 /* Main.storyboard */,
+				957340271C783CDB00D98057 /* Assets.xcassets */,
+				957340291C783CDB00D98057 /* LaunchScreen.storyboard */,
+				9573402C1C783CDB00D98057 /* Info.plist */,
+			);
+			path = vocabularynotebook2;
+			sourceTree = "<group>";
+		};
+		957340341C783CDB00D98057 /* vocabularynotebook2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				957340351C783CDB00D98057 /* vocabularynotebook2Tests.swift */,
+				957340371C783CDB00D98057 /* Info.plist */,
+			);
+			path = vocabularynotebook2Tests;
+			sourceTree = "<group>";
+		};
+		9573403F1C783CDB00D98057 /* vocabularynotebook2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				957340401C783CDB00D98057 /* vocabularynotebook2UITests.swift */,
+				957340421C783CDB00D98057 /* Info.plist */,
+			);
+			path = vocabularynotebook2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9573401C1C783CDB00D98057 /* vocabularynotebook2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 957340451C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2" */;
+			buildPhases = (
+				957340191C783CDB00D98057 /* Sources */,
+				9573401A1C783CDB00D98057 /* Frameworks */,
+				9573401B1C783CDB00D98057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vocabularynotebook2;
+			productName = vocabularynotebook2;
+			productReference = 9573401D1C783CDB00D98057 /* vocabularynotebook2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		957340301C783CDB00D98057 /* vocabularynotebook2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 957340481C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2Tests" */;
+			buildPhases = (
+				9573402D1C783CDB00D98057 /* Sources */,
+				9573402E1C783CDB00D98057 /* Frameworks */,
+				9573402F1C783CDB00D98057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				957340331C783CDB00D98057 /* PBXTargetDependency */,
+			);
+			name = vocabularynotebook2Tests;
+			productName = vocabularynotebook2Tests;
+			productReference = 957340311C783CDB00D98057 /* vocabularynotebook2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9573403B1C783CDB00D98057 /* vocabularynotebook2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9573404B1C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2UITests" */;
+			buildPhases = (
+				957340381C783CDB00D98057 /* Sources */,
+				957340391C783CDB00D98057 /* Frameworks */,
+				9573403A1C783CDB00D98057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9573403E1C783CDB00D98057 /* PBXTargetDependency */,
+			);
+			name = vocabularynotebook2UITests;
+			productName = vocabularynotebook2UITests;
+			productReference = 9573403C1C783CDB00D98057 /* vocabularynotebook2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		957340151C783CDB00D98057 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Masanari Miyamoto";
+				TargetAttributes = {
+					9573401C1C783CDB00D98057 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					957340301C783CDB00D98057 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9573401C1C783CDB00D98057;
+					};
+					9573403B1C783CDB00D98057 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9573401C1C783CDB00D98057;
+					};
+				};
+			};
+			buildConfigurationList = 957340181C783CDB00D98057 /* Build configuration list for PBXProject "vocabularynotebook2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 957340141C783CDB00D98057;
+			productRefGroup = 9573401E1C783CDB00D98057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9573401C1C783CDB00D98057 /* vocabularynotebook2 */,
+				957340301C783CDB00D98057 /* vocabularynotebook2Tests */,
+				9573403B1C783CDB00D98057 /* vocabularynotebook2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9573401B1C783CDB00D98057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9573402B1C783CDB00D98057 /* LaunchScreen.storyboard in Resources */,
+				957340281C783CDB00D98057 /* Assets.xcassets in Resources */,
+				957340261C783CDB00D98057 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9573402F1C783CDB00D98057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9573403A1C783CDB00D98057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		957340191C783CDB00D98057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957340231C783CDB00D98057 /* ViewController.swift in Sources */,
+				9573404F1C783E4900D98057 /* MakeViewController.swift in Sources */,
+				957340211C783CDB00D98057 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9573402D1C783CDB00D98057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957340361C783CDB00D98057 /* vocabularynotebook2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957340381C783CDB00D98057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957340411C783CDB00D98057 /* vocabularynotebook2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		957340331C783CDB00D98057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9573401C1C783CDB00D98057 /* vocabularynotebook2 */;
+			targetProxy = 957340321C783CDB00D98057 /* PBXContainerItemProxy */;
+		};
+		9573403E1C783CDB00D98057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9573401C1C783CDB00D98057 /* vocabularynotebook2 */;
+			targetProxy = 9573403D1C783CDB00D98057 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		957340241C783CDB00D98057 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				957340251C783CDB00D98057 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		957340291C783CDB00D98057 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9573402A1C783CDB00D98057 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		957340431C783CDB00D98057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		957340441C783CDB00D98057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		957340461C783CDB00D98057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = vocabularynotebook2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		957340471C783CDB00D98057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = vocabularynotebook2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		957340491C783CDB00D98057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = vocabularynotebook2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vocabularynotebook2.app/vocabularynotebook2";
+			};
+			name = Debug;
+		};
+		9573404A1C783CDB00D98057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = vocabularynotebook2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vocabularynotebook2.app/vocabularynotebook2";
+			};
+			name = Release;
+		};
+		9573404C1C783CDB00D98057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = vocabularynotebook2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = vocabularynotebook2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9573404D1C783CDB00D98057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = vocabularynotebook2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = vocabularynotebook2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		957340181C783CDB00D98057 /* Build configuration list for PBXProject "vocabularynotebook2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957340431C783CDB00D98057 /* Debug */,
+				957340441C783CDB00D98057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		957340451C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957340461C783CDB00D98057 /* Debug */,
+				957340471C783CDB00D98057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		957340481C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957340491C783CDB00D98057 /* Debug */,
+				9573404A1C783CDB00D98057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9573404B1C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9573404C1C783CDB00D98057 /* Debug */,
+				9573404D1C783CDB00D98057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 957340151C783CDB00D98057 /* Project object */;
+}
