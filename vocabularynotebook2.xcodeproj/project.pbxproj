@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9508D4C61C78799C009D0930 /* SinnkiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9508D4C51C78799C009D0930 /* SinnkiViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		957340211C783CDB00D98057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340201C783CDB00D98057 /* AppDelegate.swift */; };
 		957340231C783CDB00D98057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340221C783CDB00D98057 /* ViewController.swift */; };
 		957340261C783CDB00D98057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957340241C783CDB00D98057 /* Main.storyboard */; };
@@ -16,6 +17,10 @@
 		957340411C783CDB00D98057 /* vocabularynotebook2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340401C783CDB00D98057 /* vocabularynotebook2UITests.swift */; };
 		9573404F1C783E4900D98057 /* MakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573404E1C783E4900D98057 /* MakeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		957340511C78417000D98057 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957340501C78417000D98057 /* AVFoundation.framework */; };
+		95BCAFF41C785561005596AE /* ItirannViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF31C785561005596AE /* ItirannViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		95BCAFF61C78557E005596AE /* KekkaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF51C78557E005596AE /* KekkaViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		95BCAFF81C785616005596AE /* TukaikataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF71C785616005596AE /* TukaikataViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		95BCB0341C7861C2005596AE /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCB0331C7861C2005596AE /* TopViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9508D4C51C78799C009D0930 /* SinnkiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SinnkiViewController.swift; path = ../SinnkiViewController.swift; sourceTree = "<group>"; };
 		9573401D1C783CDB00D98057 /* vocabularynotebook2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocabularynotebook2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957340201C783CDB00D98057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		957340221C783CDB00D98057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,10 @@
 		957340421C783CDB00D98057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9573404E1C783E4900D98057 /* MakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeViewController.swift; path = ../MakeViewController.swift; sourceTree = "<group>"; };
 		957340501C78417000D98057 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		95BCAFF31C785561005596AE /* ItirannViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItirannViewController.swift; path = ../ItirannViewController.swift; sourceTree = "<group>"; };
+		95BCAFF51C78557E005596AE /* KekkaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KekkaViewController.swift; path = ../KekkaViewController.swift; sourceTree = "<group>"; };
+		95BCAFF71C785616005596AE /* TukaikataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TukaikataViewController.swift; path = ../TukaikataViewController.swift; sourceTree = "<group>"; };
+		95BCB0331C7861C2005596AE /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +114,13 @@
 			isa = PBXGroup;
 			children = (
 				957340201C783CDB00D98057 /* AppDelegate.swift */,
+				95BCB0331C7861C2005596AE /* TopViewController.swift */,
+				95BCAFF71C785616005596AE /* TukaikataViewController.swift */,
+				95BCAFF31C785561005596AE /* ItirannViewController.swift */,
+				9508D4C51C78799C009D0930 /* SinnkiViewController.swift */,
 				957340221C783CDB00D98057 /* ViewController.swift */,
 				9573404E1C783E4900D98057 /* MakeViewController.swift */,
+				95BCAFF51C78557E005596AE /* KekkaViewController.swift */,
 				957340241C783CDB00D98057 /* Main.storyboard */,
 				957340271C783CDB00D98057 /* Assets.xcassets */,
 				957340291C783CDB00D98057 /* LaunchScreen.storyboard */,
@@ -262,9 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9508D4C61C78799C009D0930 /* SinnkiViewController.swift in Sources */,
+				95BCAFF81C785616005596AE /* TukaikataViewController.swift in Sources */,
 				957340231C783CDB00D98057 /* ViewController.swift in Sources */,
 				9573404F1C783E4900D98057 /* MakeViewController.swift in Sources */,
+				95BCAFF41C785561005596AE /* ItirannViewController.swift in Sources */,
 				957340211C783CDB00D98057 /* AppDelegate.swift in Sources */,
+				95BCAFF61C78557E005596AE /* KekkaViewController.swift in Sources */,
+				95BCB0341C7861C2005596AE /* TopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +509,7 @@
 				957340471C783CDB00D98057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		957340481C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2Tests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +518,7 @@
 				9573404A1C783CDB00D98057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9573404B1C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2UITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +527,7 @@
 				9573404D1C783CDB00D98057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

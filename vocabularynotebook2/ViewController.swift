@@ -19,6 +19,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var count:Int = 0
     var isAnswer : Bool = false
     var talker = AVSpeechSynthesizer()
+    
+    
 
     var mondailist : [[String]] = [[]]
     
