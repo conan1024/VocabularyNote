@@ -173,6 +173,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5bu-VV-uAz">
+                                <rect key="frame" x="20" y="20" width="280" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="OVt-vi-EMI">
                                 <rect key="frame" x="20" y="269" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -196,19 +204,22 @@
                                 <state key="normal" title="スコア"/>
                                 <connections>
                                     <action selector="scoreMake" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzl-YN-OWL"/>
-                                    <segue destination="iIb-4f-udp" kind="modal" id="ztK-vm-Ado"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答え" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z7Y-Xp-NWW">
-                                <rect key="frame" x="143" y="373" width="34" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JiO-Ty-TB6">
+                                <rect key="frame" x="20" y="265" width="280" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5bu-VV-uAz">
-                                <rect key="frame" x="20" y="20" width="280" height="190"/>
+                                <color key="backgroundColor" red="0.0" green="0.46466785659999998" blue="0.98346819200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="次へ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextHide" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIC-w1-62H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答え" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z7Y-Xp-NWW">
+                                <rect key="frame" x="97" y="372" width="126" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -220,11 +231,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="decidedButton" destination="rj4-V6-Gdd" id="nDc-jb-bTM"/>
+                        <outlet property="decidedButton" destination="YBd-4K-DSH" id="Xgc-Va-oJq"/>
                         <outlet property="kotae" destination="Z7Y-Xp-NWW" id="66m-Z3-XCD"/>
                         <outlet property="mondai" destination="5bu-VV-uAz" id="zsE-U1-Sis"/>
+                        <outlet property="nextButton" destination="JiO-Ty-TB6" id="gEa-1w-kAg"/>
                         <outlet property="nyuuryoku" destination="OVt-vi-EMI" id="qZ0-KQ-cHb"/>
+                        <outlet property="scoreButton" destination="rj4-V6-Gdd" id="gDE-oF-ej1"/>
                         <segue destination="CyC-QL-feD" kind="modal" identifier="toMoveVC" id="UG1-iq-WmV"/>
+                        <segue destination="iIb-4f-udp" kind="modal" identifier="score" id="wSJ-5A-P1G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

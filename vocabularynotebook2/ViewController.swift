@@ -14,7 +14,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var mondai: UILabel!
     @IBOutlet weak var kotae: UILabel!
     @IBOutlet weak var nyuuryoku: UITextField!
-    @IBOutlet var decidedButton: UIButton!
+    @IBOutlet var scoreButton: UIButton!
+    @IBOutlet var nextButton : UIButton!
+    @IBOutlet var decidedButton : UIButton!
     
     var count:Int = 0
     var isAnswer : Bool = false
@@ -51,6 +53,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         //        initquestion()
         nyuuryoku.delegate = self
+        
+        nextButton.hidden = true
         
         
     }
@@ -90,7 +94,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func PushkousintButton(sender : UIButton) {
-        
+        print("カウントの回数")
+        print(count)
         if isAnswer != true  {
             //入力させた後の正解・不正解の動作
             
@@ -98,6 +103,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
             NSLog("textFieldの中身は。。。%@",nyuuryoku.text!)
             
             mondailist[count][1] = self.removeLineBreak(mondailist[count][1])
+            
+            decidedButton.hidden = true
             
             if mondailist[count][1] == nyuuryoku.text {
                 /*正解の時：次の問題を出す
@@ -108,12 +115,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     self.performSegueWithIdentifier("toMoveVC", sender: nil)
                     nyuuryoku.text = ""
                     NSLog("正解しました１")
-                    
-                  
-                    
                     self.speach()
                     return
                 }
+                
                 mondai.text = mondailist[count][0]
                 kotae.text = ""
                 isAnswer = false
@@ -121,7 +126,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 NSLog("正解しました２")
                 //正解数をカウント
                 correctnumber = correctnumber+1.0
-
+                
+                decidedButton.hidden = false
                 
             } else {
                 /*不正解の時：次の問題を出す*/
@@ -130,8 +136,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 count++
                 nyuuryoku.text = ""
                 NSLog("不正解です")
+                
+                nextButton.hidden = false
             }
         } else {
+            
+            //不正解後に流れるところ
+            
             mondai.text = mondailist[count][0]
             kotae.text = ""
             nyuuryoku.text = ""
@@ -152,7 +163,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             //                // 非表示
             //                self.decidedButton.hidden = true
             //            }
-            self.decidedButton.hidden = false
+            self.scoreButton.hidden = false
             
             return
         }
@@ -240,6 +251,20 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func scoreMake(){
         
         appDel.answerrate = correctnumber/appDel.allquiz*100.0
+        
+        performSegueWithIdentifier("score",sender: nil)
+        
+    }
+    
+    @IBAction func nextHide(){
+        nextButton.hidden = true
+        decidedButton.hidden = false
+        
+        
+        mondai.text = mondailist[count][0]
+        kotae.text = ""
+        nyuuryoku.text = ""
+        isAnswer = false
         
     }
     
