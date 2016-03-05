@@ -35,7 +35,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        
+        nextButton.hidden = true
+        decidedButton.hidden = false
         selectedText = appDel.selectedCellText
         correctnumber = appDel.correct
         
@@ -96,20 +97,48 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func PushkousintButton(sender : UIButton) {
         print("カウントの回数")
         print(count)
-        if isAnswer != true  {
+        if isAnswer != true {
             //入力させた後の正解・不正解の動作
             
             NSLog("hogeの中身は。。。%@",mondailist[count][1])
             NSLog("textFieldの中身は。。。%@",nyuuryoku.text!)
             
+            
+            
+            
+            
             mondailist[count][1] = self.removeLineBreak(mondailist[count][1])
+            
+            
+            if mondailist.count <= count{
+                print("count = \(count)")
+                count = 0
+                //            self.segueToMoveVC()
+                
+                //            if self.type == 1{
+                //                // 表示
+                //                self.decidedButton.hidden = false
+                //            }else{
+                //                // 非表示
+                //                self.decidedButton.hidden = true
+                //            }
+                self.scoreButton.hidden = false
+                
+                return
+            }
+            
+            
             
             decidedButton.hidden = true
             
             if mondailist[count][1] == nyuuryoku.text {
+                
                 /*正解の時：次の問題を出す
                 mondailistから一時削除(リセットで元に戻せる)*/
                 mondailist.removeAtIndex(count)
+                
+//                count = 0
+                
                 let emptyCheck = mondailist.isEmpty
                 if  emptyCheck {
                     self.performSegueWithIdentifier("toMoveVC", sender: nil)
@@ -118,7 +147,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     self.speach()
                     return
                 }
-                
+                if mondailist.count <= count{
+                    count = 0
+                }
                 mondai.text = mondailist[count][0]
                 kotae.text = ""
                 isAnswer = false
@@ -139,6 +170,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 
                 nextButton.hidden = false
             }
+            
         } else {
             
             //不正解後に流れるところ
@@ -151,22 +183,22 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         
         //カウントが問題のリストを超えた時・・・画面遷移を行う
-        if mondailist.count <= count{
-            print("count = \(count)")
-            count = 0
-            //            self.segueToMoveVC()
-            
-            //            if self.type == 1{
-            //                // 表示
-            //                self.decidedButton.hidden = false
-            //            }else{
-            //                // 非表示
-            //                self.decidedButton.hidden = true
-            //            }
-            self.scoreButton.hidden = false
-            
-            return
-        }
+//        if mondailist.count <= count{
+//            print("count = \(count)")
+//            count = 0
+//            //            self.segueToMoveVC()
+//            
+//            //            if self.type == 1{
+//            //                // 表示
+//            //                self.decidedButton.hidden = false
+//            //            }else{
+//            //                // 非表示
+//            //                self.decidedButton.hidden = true
+//            //            }
+//            self.scoreButton.hidden = false
+//            
+//            return
+//        }
         
         //mondai.text = mondailist[0][1]
         
@@ -260,7 +292,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         nextButton.hidden = true
         decidedButton.hidden = false
         
-        
+        if mondailist.count <= count{
+            count = 0
+        }
         mondai.text = mondailist[count][0]
         kotae.text = ""
         nyuuryoku.text = ""
