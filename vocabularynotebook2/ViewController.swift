@@ -21,25 +21,44 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var talker = AVSpeechSynthesizer()
     
     
-
+    
+    let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    
     var mondailist : [[String]] = [[]]
+    
+    var selectedText: String!
+    var correctnumber = 0.0
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        
+        selectedText = appDel.selectedCellText
+        correctnumber = appDel.correct
+        
+        
+        
+        print(selectedText)
+        
         initquestion()
-        }
-
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        initquestion()
+        //        initquestion()
         nyuuryoku.delegate = self
+        
+        
     }
     
     func initquestion(){
         count = 0
         //userdefaultが空かどうかを確認
-        if((NSUserDefaults.standardUserDefaults().objectForKey("wordDic")) == nil){
+        if((NSUserDefaults.standardUserDefaults().objectForKey(selectedText)) == nil){
             //            NSUserDefaults.standardUserDefaults().setObject(mondailist, forKey:"wordDic")
             //            NSUserDefaults.standardUserDefaults().synchronize()
             let delay = 0.5 * Double(NSEC_PER_SEC)
@@ -49,9 +68,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
             })
         }else{
             //mondailistにuserdefaultからよみこむ
-            mondailist = (NSUserDefaults.standardUserDefaults().objectForKey("wordDic") as! [[String]])
+            mondailist = (NSUserDefaults.standardUserDefaults().objectForKey(selectedText) as! [[String]])
             mondai.text = mondailist[0][0]
             //println(arr);
+            
+            appDel.allquiz = Double(mondailist.count)
+            
+            
         }
         //最初の問題を表示
     }
@@ -85,6 +108,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     self.performSegueWithIdentifier("toMoveVC", sender: nil)
                     nyuuryoku.text = ""
                     NSLog("正解しました１")
+                    
+                  
+                    
                     self.speach()
                     return
                 }
@@ -93,6 +119,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 isAnswer = false
                 nyuuryoku.text = ""
                 NSLog("正解しました２")
+                //正解数をカウント
+                correctnumber = correctnumber+1.0
+
                 
             } else {
                 /*不正解の時：次の問題を出す*/
@@ -207,10 +236,16 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let word = (utterance.speechString as NSString).substringWithRange(characterRange)
         print("Speech: \(word)")
     }
-
-
+    
+    @IBAction func scoreMake(){
+        
+        appDel.answerrate = correctnumber/appDel.allquiz*100.0
+        
+    }
+    
+    
     
     //ピーや
-
+    
 }
 

@@ -13,9 +13,15 @@ class MakeViewController: UIViewController, UITextViewDelegate, UITextFieldDeleg
     @IBOutlet var mondaiTextView: UITextView!
     @IBOutlet var kotaeTextView: UITextView!
     
+    let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    var selectedText: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        selectedText = appDel.selectedCellText
+        
         // Do any additional setup after loading the view.
     }
     
@@ -31,8 +37,8 @@ class MakeViewController: UIViewController, UITextViewDelegate, UITextFieldDeleg
         //前までの事柄を読み込み
         var arr = [[String]]()
         
-        if((NSUserDefaults.standardUserDefaults().objectForKey("wordDic")) != nil){
-            arr = (NSUserDefaults.standardUserDefaults().objectForKey("wordDic") as! [[String]])
+        if((NSUserDefaults.standardUserDefaults().objectForKey(selectedText)) != nil){
+            arr = (NSUserDefaults.standardUserDefaults().objectForKey(selectedText) as! [[String]])
         }
         //追加
         let question:[String] = [mondaiTextView!.text,kotaeTextView!.text]
@@ -41,7 +47,7 @@ class MakeViewController: UIViewController, UITextViewDelegate, UITextFieldDeleg
         
         //以下の事柄を保存
         //let jumpArr = ["hop","step","jump"]
-        NSUserDefaults.standardUserDefaults().setObject(arr, forKey:"wordDic");
+        NSUserDefaults.standardUserDefaults().setObject(arr, forKey:selectedText);
         NSUserDefaults.standardUserDefaults().synchronize();
         
         self.dismissViewControllerAnimated(true, completion:nil)
@@ -85,22 +91,23 @@ class MakeViewController: UIViewController, UITextViewDelegate, UITextFieldDeleg
     @IBAction func tapScreen(sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
-
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

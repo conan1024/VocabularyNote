@@ -88,7 +88,7 @@
                     </view>
                     <connections>
                         <outlet property="table" destination="Ryc-1B-GCp" id="zZN-rr-8dd"/>
-                        <segue destination="BYZ-38-t0r" kind="modal" identifier="toViewController" id="EkI-0G-qWR"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="toSubViewController" id="EkI-0G-qWR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Dz-Cs-iUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,10 +104,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Roc-Hm-SHj">
-                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <rect key="frame" x="28" y="20" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="back" destination="k3T-ub-LEG" eventType="touchUpInside" id="keH-4r-vIS"/>
                                 </connections>
@@ -173,14 +173,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5bu-VV-uAz">
-                                <rect key="frame" x="20" y="20" width="280" height="190"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="OVt-vi-EMI">
                                 <rect key="frame" x="20" y="269" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -189,22 +181,34 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YBd-4K-DSH">
-                                <rect key="frame" x="137" y="434" width="46" height="30"/>
+                                <rect key="frame" x="145" y="434" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="決定"/>
                                 <connections>
                                     <action selector="PushkousintButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8j3-ve-cep"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rj4-V6-Gdd">
-                                <rect key="frame" x="137" y="472" width="46" height="30"/>
+                                <rect key="frame" x="138" y="472" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="スコア"/>
+                                <connections>
+                                    <action selector="scoreMake" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzl-YN-OWL"/>
+                                    <segue destination="iIb-4f-udp" kind="modal" id="ztK-vm-Ado"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答え" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z7Y-Xp-NWW">
                                 <rect key="frame" x="143" y="373" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5bu-VV-uAz">
+                                <rect key="frame" x="20" y="20" width="280" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -305,7 +309,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="589" y="379"/>
+            <point key="canvasLocation" x="585" y="283"/>
         </scene>
         <!--Kekka View Controller-->
         <scene sceneID="4xT-L6-eXs">
@@ -314,13 +318,54 @@
                     <view key="view" contentMode="scaleToFill" id="T5B-LG-CUQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの正答率は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c3m-sf-ZK8">
+                                <rect key="frame" x="20" y="20" width="280" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%です" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eqm-wA-xOv">
+                                <rect key="frame" x="110" y="177" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DFu-3c-6pk">
+                                <rect key="frame" x="20" y="518" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="問題に戻る"/>
+                                <connections>
+                                    <action selector="back" destination="k3T-ub-LEG" eventType="touchUpInside" id="9cc-o3-tAO"/>
+                                    <action selector="quizback" destination="iIb-4f-udp" eventType="touchUpInside" id="I93-mN-uVe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9lU-fK-8yS">
+                                <rect key="frame" x="227" y="518" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Topに戻る"/>
+                                <connections>
+                                    <action selector="back" destination="k3T-ub-LEG" eventType="touchUpInside" id="kKc-ie-o6n"/>
+                                    <action selector="topback" destination="iIb-4f-udp" eventType="touchUpInside" id="BJh-Wg-7se"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="result" destination="Eqm-wA-xOv" id="das-S6-m8v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGb-oG-8eC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="376"/>
+            <point key="canvasLocation" x="725" y="974"/>
         </scene>
     </scenes>
 </document>

@@ -20,7 +20,11 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
     //中身を確認するためのnum
     var num = 0
     
+    
+    
     let defaults = NSUserDefaults.standardUserDefaults()
+    
+    let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +33,8 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
         
         table.delegate = self
         
-//        table.reloadData()
-//        yomikomi()
+        //        table.reloadData()
+        //        yomikomi()
         
         //        vocablaryNameArray = ["英語","数学","国語"]
     }
@@ -51,6 +55,9 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
             //各名前を格納するための変数を宣言
             var nameString:AnyObject
             
+            //※ちゃんとリフレッシュすることが大事////////////////
+            stringArray.removeAll()
+            
             //前回の保存内容が格納された配列の中身を一つずつ取り出す
             for nameString in objects!{
                 //配列に追加していく
@@ -58,8 +65,8 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
             }
             
         }
-
         
+        table.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -84,6 +91,16 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         NSLog("%@が選ばれました",stringArray[indexPath.row])
+        appDel.selectedCellText = stringArray[indexPath.row]
+        performSegueWithIdentifier("toSubViewController",sender: nil)
     }
+    
+/*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "toSubViewController") {
+            let subVC: ViewController = (segue.destinationViewController as? ViewController)!
+            // SubViewController のselectedImgに選択された画像を設定する
+            subVC.selectedText =  selectedCellText
+        }
+    }*/
 }
 
