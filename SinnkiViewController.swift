@@ -48,7 +48,7 @@ class SinnkiViewController: UIViewController,UITextFieldDelegate  {
         }
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -73,38 +73,53 @@ class SinnkiViewController: UIViewController,UITextFieldDelegate  {
     /*
     改行ボタンが押された際に呼ばれるデリゲートメソッド.
     */
+    //重複判定
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        saveText()
+        //saveText()
         return true
     }
     
     @IBAction func modoru(){
-        
-        self.dismissViewControllerAnimated(true, completion: nil)
-
+        saveText()
+        //        NSUserDefaults.standardUserDefaults().setObject(stringArray, forKey:"openKey");
+        //        NSUserDefaults.standardUserDefaults().synchronize();
     }
     
     //配列に保存する
-     func saveText(){
-        
+    func saveText(){
+        for ( var i = 0; i < stringArray.count;i++ ) {
+            if textfield.text == stringArray[i]{
+                NSLog("かぶっています")
+                let alert: UIAlertController = UIAlertController(title: "登録できません", message: "すでに同じ名前の物があります。\n別の名前に変えて下さい。", preferredStyle:  UIAlertControllerStyle.Alert)
+                
+                let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:{
+                    // ボタンが押された時の処理を書く（クロージャ実装）
+                    (action: UIAlertAction!) -> Void in
+                    print("OK")
+                })
+                alert.addAction(defaultAction)
+                presentViewController(alert, animated: true, completion: nil)
+                return
+            }
+        }
         stringArray.append(self.textfield.text!)
         
         //配列をopenKeyで保存
         defaults.setObject(stringArray, forKey: "openKey")
         defaults.synchronize()
-
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9508D4C61C78799C009D0930 /* SinnkiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9508D4C51C78799C009D0930 /* SinnkiViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		95167C971C9D38B800841BB8 /* 背景画像.png in Resources */ = {isa = PBXBuildFile; fileRef = 95167C961C9D38B800841BB8 /* 背景画像.png */; settings = {ASSET_TAGS = (); }; };
+		95167C991C9D3B1100841BB8 /* cell画像.png in Resources */ = {isa = PBXBuildFile; fileRef = 95167C981C9D3B1100841BB8 /* cell画像.png */; settings = {ASSET_TAGS = (); }; };
+		95167C9B1C9D3EDA00841BB8 /* HOKKORI.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95167C9A1C9D3E8C00841BB8 /* HOKKORI.otf */; };
+		95167C9D1C9D420300841BB8 /* 問題画面.png in Resources */ = {isa = PBXBuildFile; fileRef = 95167C9C1C9D420300841BB8 /* 問題画面.png */; settings = {ASSET_TAGS = (); }; };
 		957340211C783CDB00D98057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340201C783CDB00D98057 /* AppDelegate.swift */; };
 		957340231C783CDB00D98057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340221C783CDB00D98057 /* ViewController.swift */; };
 		957340261C783CDB00D98057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957340241C783CDB00D98057 /* Main.storyboard */; };
@@ -42,6 +46,10 @@
 
 /* Begin PBXFileReference section */
 		9508D4C51C78799C009D0930 /* SinnkiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SinnkiViewController.swift; path = ../SinnkiViewController.swift; sourceTree = "<group>"; };
+		95167C961C9D38B800841BB8 /* 背景画像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景画像.png"; sourceTree = "<group>"; };
+		95167C981C9D3B1100841BB8 /* cell画像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell画像.png"; sourceTree = "<group>"; };
+		95167C9A1C9D3E8C00841BB8 /* HOKKORI.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HOKKORI.otf; sourceTree = "<group>"; };
+		95167C9C1C9D420300841BB8 /* 問題画面.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "問題画面.png"; sourceTree = "<group>"; };
 		9573401D1C783CDB00D98057 /* vocabularynotebook2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocabularynotebook2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957340201C783CDB00D98057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		957340221C783CDB00D98057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +121,10 @@
 		9573401F1C783CDB00D98057 /* vocabularynotebook2 */ = {
 			isa = PBXGroup;
 			children = (
+				95167C9A1C9D3E8C00841BB8 /* HOKKORI.otf */,
+				95167C961C9D38B800841BB8 /* 背景画像.png */,
+				95167C981C9D3B1100841BB8 /* cell画像.png */,
+				95167C9C1C9D420300841BB8 /* 問題画面.png */,
 				957340201C783CDB00D98057 /* AppDelegate.swift */,
 				95BCB0331C7861C2005596AE /* TopViewController.swift */,
 				95BCAFF71C785616005596AE /* TukaikataViewController.swift */,
@@ -250,8 +262,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95167C9B1C9D3EDA00841BB8 /* HOKKORI.otf in Resources */,
+				95167C971C9D38B800841BB8 /* 背景画像.png in Resources */,
 				9573402B1C783CDB00D98057 /* LaunchScreen.storyboard in Resources */,
 				957340281C783CDB00D98057 /* Assets.xcassets in Resources */,
+				95167C9D1C9D420300841BB8 /* 問題画面.png in Resources */,
+				95167C991C9D3B1100841BB8 /* cell画像.png in Resources */,
 				957340261C783CDB00D98057 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

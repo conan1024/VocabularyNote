@@ -20,8 +20,6 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
     //中身を確認するためのnum
     var num = 0
     
-    
-    
     let defaults = NSUserDefaults.standardUserDefaults()
     
     let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -37,7 +35,11 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
         //        yomikomi()
         
         //        vocablaryNameArray = ["英語","数学","国語"]
+        
+         navigationItem.leftBarButtonItem = editButtonItem()
     }
+    
+    
     
     override func viewWillAppear(animated: Bool) {
         yomikomi()
@@ -85,6 +87,12 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
         
         // Configure the cell...
         cell.textLabel?.text = stringArray[indexPath.row]
+        //cell.imageView?.image = UIImage(named:"cell画像.png")
+        cell.backgroundColor = UIColor.clearColor()
+        //cell.contentView.backgroundColor = UIColor.clearColor()
+        cell.textLabel?.textAlignment = NSTextAlignment.Center
+        
+        cell.textLabel?.font = UIFont(name:"HOKKORI",size:24)
         
         return cell
     }
@@ -93,6 +101,32 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
         NSLog("%@が選ばれました",stringArray[indexPath.row])
         appDel.selectedCellText = stringArray[indexPath.row]
         performSegueWithIdentifier("toSubViewController",sender: nil)
+    }
+    
+    override func setEditing(editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        table.editing = editing
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        // 先にデータを更新する
+       stringArray.removeAtIndex(indexPath.row)
+        
+        // それからテーブルの更新
+        tableView.deleteRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)],
+            withRowAnimation: UITableViewRowAnimation.Fade)
+        
+        NSUserDefaults.standardUserDefaults().setObject(stringArray, forKey:"openKey");
+        NSUserDefaults.standardUserDefaults().synchronize();
+    }
+    
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
     }
     
 /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {

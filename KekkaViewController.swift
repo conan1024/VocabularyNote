@@ -17,7 +17,7 @@ class KekkaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        result.text = String(appDel.answerrate)
+        result.text = NSString(format: "%.2f％", appDel.answerrate)as String
 
         // Do any additional setup after loading the view.
     }

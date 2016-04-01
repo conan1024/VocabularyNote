@@ -21,6 +21,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var count:Int = 0
     var isAnswer : Bool = false
     var talker = AVSpeechSynthesizer()
+    var answercount:Int = 0
     
     
     
@@ -40,7 +41,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         selectedText = appDel.selectedCellText
         correctnumber = appDel.correct
         
-        
+//        kotae.text=""
         
         print(selectedText)
         
@@ -56,6 +57,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         nyuuryoku.delegate = self
         
         nextButton.hidden = true
+        
+        kotae.font = UIFont(name: "HOKKORI",size:24)
+        mondai.font = UIFont(name: "HOKKORI",size:24)
         
         
     }
@@ -96,6 +100,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func PushkousintButton(sender : UIButton) {
         print("カウントの回数")
+        answercount++
         print(count)
         if isAnswer != true {
             //入力させた後の正解・不正解の動作
@@ -282,8 +287,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func scoreMake(){
         
-        appDel.answerrate = correctnumber/appDel.allquiz*100.0
-        
+        if answercount < Int(appDel.allquiz){
+            
+            appDel.answerrate = (correctnumber/Double(answercount))*100.0
+            
+        }else{
+             appDel.answerrate = correctnumber/appDel.allquiz*100.0
+            
+        }
         performSegueWithIdentifier("score",sender: nil)
         
     }

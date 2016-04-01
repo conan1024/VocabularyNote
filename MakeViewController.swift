@@ -33,6 +33,7 @@ class MakeViewController: UIViewController, UITextViewDelegate, UITextFieldDeleg
         
     }
     
+    
     @IBAction func save(){
         //前までの事柄を読み込み
         var arr = [[String]]()
@@ -40,6 +41,19 @@ class MakeViewController: UIViewController, UITextViewDelegate, UITextFieldDeleg
         if((NSUserDefaults.standardUserDefaults().objectForKey(selectedText)) != nil){
             arr = (NSUserDefaults.standardUserDefaults().objectForKey(selectedText) as! [[String]])
         }
+        if mondaiTextView.text == "" || kotaeTextView.text == ""{
+            let alert: UIAlertController = UIAlertController(title: "追加できません", message: "問題と答えのどちらにも\n入力をして下さい。", preferredStyle:  UIAlertControllerStyle.Alert)
+            
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:{
+                // ボタンが押された時の処理を書く（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("OK")
+            })
+            alert.addAction(defaultAction)
+            presentViewController(alert, animated: true, completion: nil)
+            return
+        }
+        
         //追加
         let question:[String] = [mondaiTextView!.text,kotaeTextView!.text]
         
