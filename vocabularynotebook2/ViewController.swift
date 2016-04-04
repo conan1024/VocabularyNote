@@ -23,7 +23,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var talker = AVSpeechSynthesizer()
     var answercount:Int = 0
     
-    
+    var language = ""
     
     let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
@@ -36,16 +36,46 @@ class ViewController: UIViewController,UITextFieldDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        nextButton.hidden = true
-        decidedButton.hidden = false
+        if appDel.isReset == true{
+            
+            appDel.allanswercount = 0
+            nextButton.hidden = true
+            decidedButton.hidden = false
+            selectedText = appDel.selectedCellText
+            correctnumber = appDel.correct
+            
+            initquestion()
+        }
+        
+        // nextButton.hidden = true
+        // decidedButton.hidden = false
         selectedText = appDel.selectedCellText
         correctnumber = appDel.correct
-        
-//        kotae.text=""
-        
         print(selectedText)
+        //
+        //  initquestion()
+        //mondailistの要素数が0だったら
+        //initquestion()を呼び出す
+        if mondailist.count == 0{
+            initquestion()
+        }
         
-        initquestion()
+        if appDel.isAdd == true && appDel.allanswercount != 0{
+            //追加した後の問題
+            //
+            if((NSUserDefaults.standardUserDefaults().objectForKey(selectedText)) != nil){
+                let lastQuestions: [[String]] = NSUserDefaults.standardUserDefaults().objectForKey(selectedText) as! [[String]]
+                mondailist.append(lastQuestions.last!)
+                if mondai.text == "" {
+                    mondai.text = mondailist[0][0]
+                }
+            }
+            
+            
+            appDel.isAdd == false
+        } else if appDel.isAdd == true && appDel.allanswercount == 0{
+            initquestion()
+        }
         
         
     }
@@ -54,14 +84,21 @@ class ViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //        initquestion()
+        appDel.allanswercount = 0
+        
         nyuuryoku.delegate = self
         
-        nextButton.hidden = true
+        //        nextButton.hidden = true
         
         kotae.font = UIFont(name: "HOKKORI",size:24)
         mondai.font = UIFont(name: "HOKKORI",size:24)
         
+        nextButton.hidden = true
+        decidedButton.hidden = false
+        selectedText = appDel.selectedCellText
+        correctnumber = appDel.correct
         
+        initquestion()
     }
     
     func initquestion(){
@@ -100,6 +137,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func PushkousintButton(sender : UIButton) {
         print("カウントの回数")
+        appDel.allanswercount++
         answercount++
         print(count)
         if isAnswer != true {
@@ -108,14 +146,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
             NSLog("hogeの中身は。。。%@",mondailist[count][1])
             NSLog("textFieldの中身は。。。%@",nyuuryoku.text!)
             
-            
-            
-            
-            
             mondailist[count][1] = self.removeLineBreak(mondailist[count][1])
             
             
-            if mondailist.count <= count{
+            if mondailist.count < count{
                 print("count = \(count)")
                 count = 0
                 //            self.segueToMoveVC()
@@ -133,23 +167,38 @@ class ViewController: UIViewController,UITextFieldDelegate {
             }
             
             
-            
             decidedButton.hidden = true
             
             if mondailist[count][1] == nyuuryoku.text {
+                
                 
                 /*正解の時：次の問題を出す
                 mondailistから一時削除(リセットで元に戻せる)*/
                 mondailist.removeAtIndex(count)
                 
-//                count = 0
+                //                count = 0
+                correctnumber = correctnumber+1.0
                 
                 let emptyCheck = mondailist.isEmpty
                 if  emptyCheck {
-                    self.performSegueWithIdentifier("toMoveVC", sender: nil)
+                    
+                    if answercount == 0{
+                        appDel.answerrate = 0
+                        
+                    }else if answercount < Int(appDel.allquiz){
+                        
+                        appDel.answerrate = (correctnumber/Double(appDel.allanswercount))*100.0
+                        
+                    }else {
+                        appDel.answerrate = correctnumber/appDel.allanswercount*100.0
+                        
+                    }
+                    performSegueWithIdentifier("score",sender: nil)
+                    
+                    self.performSegueWithIdentifier("score", sender: nil)
                     nyuuryoku.text = ""
                     NSLog("正解しました１")
-                    self.speach()
+                    //self.speach()
                     return
                 }
                 if mondailist.count <= count{
@@ -161,7 +210,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 nyuuryoku.text = ""
                 NSLog("正解しました２")
                 //正解数をカウント
-                correctnumber = correctnumber+1.0
                 
                 decidedButton.hidden = false
                 
@@ -188,22 +236,22 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         
         //カウントが問題のリストを超えた時・・・画面遷移を行う
-//        if mondailist.count <= count{
-//            print("count = \(count)")
-//            count = 0
-//            //            self.segueToMoveVC()
-//            
-//            //            if self.type == 1{
-//            //                // 表示
-//            //                self.decidedButton.hidden = false
-//            //            }else{
-//            //                // 非表示
-//            //                self.decidedButton.hidden = true
-//            //            }
-//            self.scoreButton.hidden = false
-//            
-//            return
-//        }
+        //        if mondailist.count <= count{
+        //            print("count = \(count)")
+        //            count = 0
+        //            //            self.segueToMoveVC()
+        //
+        //            //            if self.type == 1{
+        //            //                // 表示
+        //            //                self.decidedButton.hidden = false
+        //            //            }else{
+        //            //                // 非表示
+        //            //                self.decidedButton.hidden = true
+        //            //            }
+        //            self.scoreButton.hidden = false
+        //
+        //            return
+        //        }
         
         //mondai.text = mondailist[0][1]
         
@@ -219,25 +267,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
         //            isAnswer =  true
         //            count++
         //        }
-        self.speach()
-        
+        //self.speach()
     }
     
-    func speach() {
-        // 話す内容をセット
-        let utterance = AVSpeechUtterance(string:self.kotae.text!)
-        // 言語を日本に設定
-        utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP")
-        // 実行
-        self.talker.speakUtterance(utterance)
-    }
+    
     
     @IBAction func didTapAddButton() {
-        self.performSegueWithIdentifier("toMoveVC", sender: nil)
+        self.performSegueWithIdentifier("score", sender: nil)
     }
     
-    func segueToMoveVC() {
-        self.performSegueWithIdentifier("toMoveVC", sender: nil)
+    func seguescore() {
+        self.performSegueWithIdentifier("score", sender: nil)
     }
     
     /*
@@ -285,14 +325,67 @@ class ViewController: UIViewController,UITextFieldDelegate {
         print("Speech: \(word)")
     }
     
+    func speach() {
+        let utterance = AVSpeechUtterance(string:self.kotae.text!)
+        language = NSUserDefaults.standardUserDefaults().objectForKey(selectedText + "langKey") as! String
+        if language == "日本語"{
+            utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP")
+        }else if language == "英語(English)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        }else if language == "中国語(中文)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
+        }else if language == "韓国語(한국어)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
+        }else if language == "ドイツ語(Deutsch)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "da-DK")
+        }else if language == "フランス語(Français)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "fr-FR")
+        }else if language == "ロシア語(Русский язык)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "ru-RU")
+        }
+        self.talker.speakUtterance(utterance)
+    }
+    
+    @IBAction func voice(){
+        self.speach()
+    }
+    
+    func speach2() {
+        let utterance = AVSpeechUtterance(string:self.mondai.text!)
+        language = NSUserDefaults.standardUserDefaults().objectForKey(selectedText + "langKey") as! String
+        if language == "日本語"{
+            utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP")
+        }else if language == "英語(English)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        }else if language == "中国語(中文)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
+        }else if language == "韓国語(한국어)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
+        }else if language == "ドイツ語(Deutsch)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "da-DK")
+        }else if language == "フランス語(Français)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "fr-FR")
+        }else if language == "ロシア語(Русский язык)" {
+            utterance.voice = AVSpeechSynthesisVoice(language: "ru-RU")
+        }
+        self.talker.speakUtterance(utterance)
+    }
+    
+    @IBAction func voice2(){
+        self.speach2()
+    }
+    
     @IBAction func scoreMake(){
         
-        if answercount < Int(appDel.allquiz){
+        if answercount == 0{
+            appDel.answerrate = 0
             
-            appDel.answerrate = (correctnumber/Double(answercount))*100.0
+        }else if answercount < Int(appDel.allquiz){
             
-        }else{
-             appDel.answerrate = correctnumber/appDel.allquiz*100.0
+            appDel.answerrate = (correctnumber/Double(appDel.allanswercount))*100.0
+            
+        }else {
+            appDel.answerrate = correctnumber/appDel.allanswercount*100.0
             
         }
         performSegueWithIdentifier("score",sender: nil)
@@ -310,12 +403,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
         kotae.text = ""
         nyuuryoku.text = ""
         isAnswer = false
-        
+    }
+    
+    @IBAction func back(){
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func next(sender : UIButton) {
+        performSegueWithIdentifier("toMoveVC",sender: nil)
     }
     
     
     
     //ピーや
-    
 }
-

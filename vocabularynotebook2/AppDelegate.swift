@@ -18,6 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var allquiz = 0.0
     var answerrate = 0.0
     
+    //解いた問題数
+    var allanswercount = 0.0
+    
+    //リセットをするかしないかの判定
+    var isReset = false
+    
+    //追加されたか、されていないかの判定
+    var isAdd = false
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true

@@ -9,9 +9,10 @@
 
 import UIKit
 
-class SinnkiViewController: UIViewController,UITextFieldDelegate  {
+class SinnkiViewController: UIViewController,UITextFieldDelegate,UIPickerViewDelegate, UIPickerViewDataSource  {
     
     @IBOutlet var textfield : UITextField!
+    @IBOutlet var languagePickerView : UIPickerView!
     
     //空の配列を用意する
     var stringArray : [String] = []
@@ -19,11 +20,36 @@ class SinnkiViewController: UIViewController,UITextFieldDelegate  {
     //中身を確認するためのnum
     var num = 0
     
+    var language = "日本語"
+    
     let defaults = NSUserDefaults.standardUserDefaults()
+    
+    let languageselect : [String] = ["日本語","英語(English)","中国語(中文)","韓国語(한국어)","ドイツ語(Deutsch)","フランス語(Français)","ロシア語(Русский язык)"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        languagePickerView.delegate = self
+        languagePickerView.dataSource = self
     }
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return languageselect.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
+        return languageselect[row] as String
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print("列: \(row)")
+        print("値: \(languageselect[row])")
+        language = languageselect[row]
+    }
+
     
     override func viewDidAppear(animated: Bool) {
         // Do any additional setup after loading the view.
@@ -107,7 +133,13 @@ class SinnkiViewController: UIViewController,UITextFieldDelegate  {
         
         //配列をopenKeyで保存
         defaults.setObject(stringArray, forKey: "openKey")
+        defaults.setObject(language, forKey: self.textfield.text! + "langKey")
+        NSLog("aaaaaaa%@",defaults.objectForKey(self.textfield.text! + "langKey") as! String)
         defaults.synchronize()
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func back(){
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     

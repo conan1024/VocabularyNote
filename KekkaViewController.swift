@@ -28,6 +28,7 @@ class KekkaViewController: UIViewController {
     }
     
     @IBAction func quizback(){
+        appDel.isReset = true
         self.dismissViewControllerAnimated(true, completion: nil)
         
     }
@@ -35,13 +36,6 @@ class KekkaViewController: UIViewController {
     @IBAction func topback(){
         self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-   
-    
-    
-    
-    
-    
     /*
     // MARK: - Navigation
     

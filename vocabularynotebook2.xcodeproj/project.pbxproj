@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9508D4C61C78799C009D0930 /* SinnkiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9508D4C51C78799C009D0930 /* SinnkiViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		95167C971C9D38B800841BB8 /* 背景画像.png in Resources */ = {isa = PBXBuildFile; fileRef = 95167C961C9D38B800841BB8 /* 背景画像.png */; settings = {ASSET_TAGS = (); }; };
-		95167C991C9D3B1100841BB8 /* cell画像.png in Resources */ = {isa = PBXBuildFile; fileRef = 95167C981C9D3B1100841BB8 /* cell画像.png */; settings = {ASSET_TAGS = (); }; };
 		95167C9B1C9D3EDA00841BB8 /* HOKKORI.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95167C9A1C9D3E8C00841BB8 /* HOKKORI.otf */; };
-		95167C9D1C9D420300841BB8 /* 問題画面.png in Resources */ = {isa = PBXBuildFile; fileRef = 95167C9C1C9D420300841BB8 /* 問題画面.png */; settings = {ASSET_TAGS = (); }; };
 		957340211C783CDB00D98057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340201C783CDB00D98057 /* AppDelegate.swift */; };
 		957340231C783CDB00D98057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340221C783CDB00D98057 /* ViewController.swift */; };
 		957340261C783CDB00D98057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957340241C783CDB00D98057 /* Main.storyboard */; };
@@ -25,6 +22,25 @@
 		95BCAFF61C78557E005596AE /* KekkaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF51C78557E005596AE /* KekkaViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		95BCAFF81C785616005596AE /* TukaikataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF71C785616005596AE /* TukaikataViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		95BCB0341C7861C2005596AE /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCB0331C7861C2005596AE /* TopViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		95FB37E21CB09A8100BF5D1D /* Addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D11CB09A8100BF5D1D /* Addbutton.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37E31CB09A8100BF5D1D /* Answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D21CB09A8100BF5D1D /* Answer.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37E51CB09A8100BF5D1D /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D41CB09A8100BF5D1D /* Score.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37E61CB09A8100BF5D1D /* Backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D51CB09A8100BF5D1D /* Backbutton.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37E71CB09A8100BF5D1D /* Createthewordbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D61CB09A8100BF5D1D /* Createthewordbook.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37E81CB09A8100BF5D1D /* Createwordbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D71CB09A8100BF5D1D /* Createwordbook.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37E91CB09A8100BF5D1D /* Startlearning.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D81CB09A8100BF5D1D /* Startlearning.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37EA1CB09A8100BF5D1D /* Howtouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D91CB09A8100BF5D1D /* Howtouse.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37EB1CB09A8100BF5D1D /* Backtothetop.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DA1CB09A8100BF5D1D /* Backtothetop.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37EC1CB09A8100BF5D1D /* List.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DB1CB09A8100BF5D1D /* List.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37ED1CB09A8100BF5D1D /* Howtousebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DC1CB09A8100BF5D1D /* Howtousebutton.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37EE1CB09A8100BF5D1D /* Repeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DD1CB09A8100BF5D1D /* Repeat.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37F01CB09A8100BF5D1D /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DF1CB09A8100BF5D1D /* Start.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37F11CB09A8100BF5D1D /* Startback.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37E01CB09A8100BF5D1D /* Startback.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37F21CB09A8100BF5D1D /* Word.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37E11CB09A8100BF5D1D /* Word.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37F41CB09E4000BF5D1D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F31CB09E4000BF5D1D /* back.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37F61CB09F9D00BF5D1D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F51CB09F9D00BF5D1D /* Default.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37F81CB09FFC00BF5D1D /* Wordbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F71CB09FFC00BF5D1D /* Wordbook.png */; settings = {ASSET_TAGS = (); }; };
+		95FB37FA1CB0A5BC00BF5D1D /* Createtheword.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F91CB0A5BC00BF5D1D /* Createtheword.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +62,7 @@
 
 /* Begin PBXFileReference section */
 		9508D4C51C78799C009D0930 /* SinnkiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SinnkiViewController.swift; path = ../SinnkiViewController.swift; sourceTree = "<group>"; };
-		95167C961C9D38B800841BB8 /* 背景画像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景画像.png"; sourceTree = "<group>"; };
-		95167C981C9D3B1100841BB8 /* cell画像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell画像.png"; sourceTree = "<group>"; };
 		95167C9A1C9D3E8C00841BB8 /* HOKKORI.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HOKKORI.otf; sourceTree = "<group>"; };
-		95167C9C1C9D420300841BB8 /* 問題画面.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "問題画面.png"; sourceTree = "<group>"; };
 		9573401D1C783CDB00D98057 /* vocabularynotebook2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocabularynotebook2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957340201C783CDB00D98057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		957340221C783CDB00D98057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +82,25 @@
 		95BCAFF51C78557E005596AE /* KekkaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KekkaViewController.swift; path = ../KekkaViewController.swift; sourceTree = "<group>"; };
 		95BCAFF71C785616005596AE /* TukaikataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TukaikataViewController.swift; path = ../TukaikataViewController.swift; sourceTree = "<group>"; };
 		95BCB0331C7861C2005596AE /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		95FB37D11CB09A8100BF5D1D /* Addbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Addbutton.png; sourceTree = "<group>"; };
+		95FB37D21CB09A8100BF5D1D /* Answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Answer.png; sourceTree = "<group>"; };
+		95FB37D41CB09A8100BF5D1D /* Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Score.png; sourceTree = "<group>"; };
+		95FB37D51CB09A8100BF5D1D /* Backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backbutton.png; sourceTree = "<group>"; };
+		95FB37D61CB09A8100BF5D1D /* Createthewordbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Createthewordbook.png; sourceTree = "<group>"; };
+		95FB37D71CB09A8100BF5D1D /* Createwordbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Createwordbook.png; sourceTree = "<group>"; };
+		95FB37D81CB09A8100BF5D1D /* Startlearning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Startlearning.png; sourceTree = "<group>"; };
+		95FB37D91CB09A8100BF5D1D /* Howtouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Howtouse.png; sourceTree = "<group>"; };
+		95FB37DA1CB09A8100BF5D1D /* Backtothetop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backtothetop.png; sourceTree = "<group>"; };
+		95FB37DB1CB09A8100BF5D1D /* List.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = List.png; sourceTree = "<group>"; };
+		95FB37DC1CB09A8100BF5D1D /* Howtousebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Howtousebutton.png; sourceTree = "<group>"; };
+		95FB37DD1CB09A8100BF5D1D /* Repeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Repeat.png; sourceTree = "<group>"; };
+		95FB37DF1CB09A8100BF5D1D /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
+		95FB37E01CB09A8100BF5D1D /* Startback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Startback.png; sourceTree = "<group>"; };
+		95FB37E11CB09A8100BF5D1D /* Word.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Word.png; sourceTree = "<group>"; };
+		95FB37F31CB09E4000BF5D1D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		95FB37F51CB09F9D00BF5D1D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		95FB37F71CB09FFC00BF5D1D /* Wordbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wordbook.png; sourceTree = "<group>"; };
+		95FB37F91CB0A5BC00BF5D1D /* Createtheword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Createtheword.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +153,26 @@
 		9573401F1C783CDB00D98057 /* vocabularynotebook2 */ = {
 			isa = PBXGroup;
 			children = (
+				95FB37F51CB09F9D00BF5D1D /* Default.png */,
+				95FB37D21CB09A8100BF5D1D /* Answer.png */,
+				95FB37D41CB09A8100BF5D1D /* Score.png */,
+				95FB37D51CB09A8100BF5D1D /* Backbutton.png */,
+				95FB37D61CB09A8100BF5D1D /* Createthewordbook.png */,
+				95FB37F91CB0A5BC00BF5D1D /* Createtheword.png */,
+				95FB37D71CB09A8100BF5D1D /* Createwordbook.png */,
+				95FB37D81CB09A8100BF5D1D /* Startlearning.png */,
+				95FB37D91CB09A8100BF5D1D /* Howtouse.png */,
+				95FB37DA1CB09A8100BF5D1D /* Backtothetop.png */,
+				95FB37DB1CB09A8100BF5D1D /* List.png */,
+				95FB37DC1CB09A8100BF5D1D /* Howtousebutton.png */,
+				95FB37DD1CB09A8100BF5D1D /* Repeat.png */,
+				95FB37F31CB09E4000BF5D1D /* back.png */,
+				95FB37DF1CB09A8100BF5D1D /* Start.png */,
+				95FB37D11CB09A8100BF5D1D /* Addbutton.png */,
+				95FB37E01CB09A8100BF5D1D /* Startback.png */,
+				95FB37E11CB09A8100BF5D1D /* Word.png */,
+				95FB37F71CB09FFC00BF5D1D /* Wordbook.png */,
 				95167C9A1C9D3E8C00841BB8 /* HOKKORI.otf */,
-				95167C961C9D38B800841BB8 /* 背景画像.png */,
-				95167C981C9D3B1100841BB8 /* cell画像.png */,
-				95167C9C1C9D420300841BB8 /* 問題画面.png */,
 				957340201C783CDB00D98057 /* AppDelegate.swift */,
 				95BCB0331C7861C2005596AE /* TopViewController.swift */,
 				95BCAFF71C785616005596AE /* TukaikataViewController.swift */,
@@ -262,13 +310,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95FB37F21CB09A8100BF5D1D /* Word.png in Resources */,
+				95FB37FA1CB0A5BC00BF5D1D /* Createtheword.png in Resources */,
+				95FB37E81CB09A8100BF5D1D /* Createwordbook.png in Resources */,
+				95FB37EE1CB09A8100BF5D1D /* Repeat.png in Resources */,
+				95FB37E51CB09A8100BF5D1D /* Score.png in Resources */,
 				95167C9B1C9D3EDA00841BB8 /* HOKKORI.otf in Resources */,
-				95167C971C9D38B800841BB8 /* 背景画像.png in Resources */,
 				9573402B1C783CDB00D98057 /* LaunchScreen.storyboard in Resources */,
 				957340281C783CDB00D98057 /* Assets.xcassets in Resources */,
-				95167C9D1C9D420300841BB8 /* 問題画面.png in Resources */,
-				95167C991C9D3B1100841BB8 /* cell画像.png in Resources */,
 				957340261C783CDB00D98057 /* Main.storyboard in Resources */,
+				95FB37F81CB09FFC00BF5D1D /* Wordbook.png in Resources */,
+				95FB37E91CB09A8100BF5D1D /* Startlearning.png in Resources */,
+				95FB37E21CB09A8100BF5D1D /* Addbutton.png in Resources */,
+				95FB37F41CB09E4000BF5D1D /* back.png in Resources */,
+				95FB37F11CB09A8100BF5D1D /* Startback.png in Resources */,
+				95FB37E61CB09A8100BF5D1D /* Backbutton.png in Resources */,
+				95FB37E71CB09A8100BF5D1D /* Createthewordbook.png in Resources */,
+				95FB37EA1CB09A8100BF5D1D /* Howtouse.png in Resources */,
+				95FB37F01CB09A8100BF5D1D /* Start.png in Resources */,
+				95FB37EC1CB09A8100BF5D1D /* List.png in Resources */,
+				95FB37E31CB09A8100BF5D1D /* Answer.png in Resources */,
+				95FB37EB1CB09A8100BF5D1D /* Backtothetop.png in Resources */,
+				95FB37ED1CB09A8100BF5D1D /* Howtousebutton.png in Resources */,
+				95FB37F61CB09F9D00BF5D1D /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = vocabularynotebook2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = vocabularynotebook2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -64,6 +64,8 @@ class MakeViewController: UIViewController, UITextViewDelegate, UITextFieldDeleg
         NSUserDefaults.standardUserDefaults().setObject(arr, forKey:selectedText);
         NSUserDefaults.standardUserDefaults().synchronize();
         
+        appDel.isAdd = true
+        
         self.dismissViewControllerAnimated(true, completion:nil)
     }
     
@@ -110,6 +112,10 @@ class MakeViewController: UIViewController, UITextViewDelegate, UITextFieldDeleg
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func back(){
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     

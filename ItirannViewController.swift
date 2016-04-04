@@ -36,7 +36,18 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
         
         //        vocablaryNameArray = ["英語","数学","国語"]
         
-         navigationItem.leftBarButtonItem = editButtonItem()
+        // make UIImageView instance
+        let imageView = UIImageView(frame: CGRectMake(0, 0, self.table.frame.width, self.table.frame.height))
+        // read image
+        let image = UIImage(named: "Startback.png")
+        // set image to ImageView
+        imageView.image = image
+        // set alpha value of imageView
+        imageView.alpha = 0.5
+        // set imageView to backgroundView of TableView
+        self.table.backgroundView = imageView
+        
+        navigationItem.leftBarButtonItem = editButtonItem()
     }
     
     
@@ -92,6 +103,8 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
         //cell.contentView.backgroundColor = UIColor.clearColor()
         cell.textLabel?.textAlignment = NSTextAlignment.Center
         
+        cell.contentView.backgroundColor = UIColor.clearColor()
+        
         cell.textLabel?.font = UIFont(name:"HOKKORI",size:24)
         
         return cell
@@ -112,29 +125,60 @@ class ItirannViewController: UIViewController,UITableViewDataSource,UITableViewD
         return true
     }
     
+    /* func tableView(tableView: UITableView, commitEditingStyle editingStyle:
+    let alert: UIAlertController = UIAlertController(title: "削除しますか", message: "本当に削除しても良いですか？", preferredStyle:  UIAlertControllerStyle.Alert)
+    
+    let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:{
+    (action: UIAlertAction!) -> Void in
+    print("OK")
+    })
+    let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertActionStyle.Cancel, handler:{
+    (action: UIAlertAction!) -> Void in
+    print("Cancel")
+    })*/
+    
+    
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         
-        // 先にデータを更新する
-       stringArray.removeAtIndex(indexPath.row)
+        let alert: UIAlertController = UIAlertController(title: "削除しますか", message: "本当に削除しても良いですか？", preferredStyle:  UIAlertControllerStyle.Alert)
         
-        // それからテーブルの更新
-        tableView.deleteRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)],
-            withRowAnimation: UITableViewRowAnimation.Fade)
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("OK")
+            NSUserDefaults.standardUserDefaults().removeObjectForKey(self.stringArray[indexPath.row])
+            // 先にデータを更新する
+            self.stringArray.removeAtIndex(indexPath.row)
+            
+            // それからテーブルの更新
+            tableView.deleteRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)],
+                withRowAnimation: UITableViewRowAnimation.Fade)
+            
+            NSUserDefaults.standardUserDefaults().setObject(self.stringArray, forKey:"openKey");
+            NSUserDefaults.standardUserDefaults().synchronize();
+        })
+        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertActionStyle.Cancel, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("Cancel")
+            
+            tableView.editing = false
+        })
         
-        NSUserDefaults.standardUserDefaults().setObject(stringArray, forKey:"openKey");
-        NSUserDefaults.standardUserDefaults().synchronize();
+        alert.addAction(defaultAction)
+        alert.addAction(cancelAction)
+        
+        presentViewController(alert, animated: true, completion: nil)
     }
     
     func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
     
-/*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "toSubViewController") {
-            let subVC: ViewController = (segue.destinationViewController as? ViewController)!
-            // SubViewController のselectedImgに選択された画像を設定する
-            subVC.selectedText =  selectedCellText
-        }
+    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    if (segue.identifier == "toSubViewController") {
+    let subVC: ViewController = (segue.destinationViewController as? ViewController)!
+    // SubViewController のselectedImgに選択された画像を設定する
+    subVC.selectedText =  selectedCellText
+    }
     }*/
 }
 
