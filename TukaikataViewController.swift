@@ -22,7 +22,7 @@ class TukaikataViewController: UIViewController {
     }
     
     @IBAction func back(){
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 
     /*

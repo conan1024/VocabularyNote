@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="h4T-Xu-ZOE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="h4T-Xu-ZOE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HOKKORI.otf">
+            <string>HOKKORI</string>
+            <string>HOKKORI</string>
+            <string>HOKKORI</string>
+            <string>HOKKORI</string>
+            <string>HOKKORI</string>
+            <string>HOKKORI</string>
+            <string>HOKKORI</string>
             <string>HOKKORI</string>
             <string>HOKKORI</string>
             <string>HOKKORI</string>
@@ -26,51 +35,31 @@
         <scene sceneID="55f-Td-hAv">
             <objects>
                 <viewController id="h4T-Xu-ZOE" customClass="TopViewController" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xVZ-o4-Bah"/>
+                        <viewControllerLayoutGuide type="bottom" id="krx-B6-Out"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JZF-gO-Zoh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Startback.png" id="7ho-Am-cvh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Startback2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sud-Xl-uTA">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Startlearning.png" id="yr1-Jl-JaR">
-                                <rect key="frame" x="37" y="385" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Startlearning.png" translatesAutoresizingMaskIntoConstraints="NO" id="yr1-Jl-JaR">
+                                <rect key="frame" x="34" y="420" width="252" height="47"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Howtousebutton.png" id="UK4-Xz-tlm">
-                                <rect key="frame" x="34" y="447" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DCl-5f-saD">
-                                <rect key="frame" x="37" y="385" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCl-5f-saD">
+                                <rect key="frame" x="34" y="420" width="252" height="47"/>
                                 <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3zy-3p-rFd" kind="modal" id="KED-7R-jdD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yLM-Id-5KG">
-                                <rect key="frame" x="37" y="447" width="249" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="k3T-ub-LEG" kind="modal" id="hlQ-nf-lwG"/>
+                                    <segue destination="3zy-3p-rFd" kind="modal" id="P5m-GJ-pRj"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -78,529 +67,535 @@
             </objects>
             <point key="canvasLocation" x="-695" y="379"/>
         </scene>
-        <!--Itirann View Controller-->
+        <!--Vocabulary Notebook List-->
         <scene sceneID="Kg8-0D-oiQ">
             <objects>
-                <viewController id="3zy-3p-rFd" customClass="ItirannViewController" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3zy-3p-rFd" customClass="VocabularyNotebookList" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CqO-EB-b6a"/>
+                        <viewControllerLayoutGuide type="bottom" id="OM8-V5-mBU"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dXP-iq-iWx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" id="mwG-Yg-QsJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackGround.png" translatesAutoresizingMaskIntoConstraints="NO" id="mwG-Yg-QsJ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Addbutton.png" id="mK0-7T-4Vq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Addbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="mK0-7T-4Vq">
                                 <rect key="frame" x="255" y="25" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a1X-0A-s79">
-                                <rect key="frame" x="255" y="27" width="49" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1X-0A-s79">
+                                <rect key="frame" x="255" y="28" width="49" height="45"/>
                                 <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="s18-gU-6fi" kind="modal" id="WU5-BG-zse"/>
+                                    <segue destination="s18-gU-6fi" kind="modal" id="r8Z-cD-Wi3"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="133" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ryc-1B-GCp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="133" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ryc-1B-GCp">
                                 <rect key="frame" x="0.0" y="125" width="320" height="443"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="133" id="LpW-QE-3OD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="133" id="LpW-QE-3OD" customClass="SWTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="320" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LpW-QE-3OD" id="x2S-SY-5wS">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wordbook.png" id="mfx-pC-uKk">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WordbookDefaults.png" translatesAutoresizingMaskIntoConstraints="NO" id="mfx-pC-uKk">
                                                     <rect key="frame" x="3" y="0.0" width="314" height="130"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="mfx-pC-uKk" secondAttribute="height" multiplier="157:65" id="b3K-c1-CQW"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mfx-pC-uKk" secondAttribute="bottom" constant="-6" id="Bvr-MY-fwm"/>
+                                                <constraint firstItem="mfx-pC-uKk" firstAttribute="top" secondItem="x2S-SY-5wS" secondAttribute="topMargin" constant="-8" id="l5y-h5-QKp"/>
+                                                <constraint firstItem="mfx-pC-uKk" firstAttribute="leading" secondItem="x2S-SY-5wS" secondAttribute="leadingMargin" priority="100" constant="-5" id="tsC-T3-Tfe"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Edit.png" translatesAutoresizingMaskIntoConstraints="NO" id="XN9-xx-vwr">
+                                <rect key="frame" x="15" y="25" width="49" height="49"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr2-dV-PCM">
+                                <rect key="frame" x="15" y="28" width="49" height="45"/>
+                                <connections>
+                                    <action selector="pushEditButton" destination="3zy-3p-rFd" eventType="touchUpInside" id="y5B-Do-Owz"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oeg-o3-tFE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="0wP-bZ-4GT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dau-tj-3FZ"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="table" destination="Ryc-1B-GCp" id="zZN-rr-8dd"/>
-                        <segue destination="BYZ-38-t0r" kind="modal" identifier="toSubViewController" id="EkI-0G-qWR"/>
+                        <outlet property="editButtonImage" destination="XN9-xx-vwr" id="Orq-bo-bwm"/>
+                        <outlet property="vocabularyNotebookTableView" destination="Ryc-1B-GCp" id="eUU-Rx-lhd"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="toMoveVNC" id="gg4-V9-gM1"/>
+                        <segue destination="iJt-lR-G3x" kind="modal" identifier="toMoveVCC" id="Tgb-2n-96c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Dz-Cs-iUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-236" y="379"/>
         </scene>
-        <!--Tukaikata View Controller-->
-        <scene sceneID="vPb-Y1-AiD">
+        <!--Vocabulary List-->
+        <scene sceneID="PpW-ds-yTe">
             <objects>
-                <viewController id="k3T-ub-LEG" customClass="TukaikataViewController" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eaW-YI-3Tw">
+                <viewController id="iJt-lR-G3x" customClass="VocabularyList" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nuX-QJ-Vqj"/>
+                        <viewControllerLayoutGuide type="bottom" id="UUT-pP-KJW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="etK-3b-XJV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" id="0Wp-Vh-RMK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackGround.png" translatesAutoresizingMaskIntoConstraints="NO" id="qig-f8-XOn">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backbutton.png" id="kZg-2n-tKY">
-                                <rect key="frame" x="15" y="25" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Roc-Hm-SHj">
-                                <rect key="frame" x="15" y="25" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-dN-LPW">
+                                <rect key="frame" x="0.0" y="125" width="320" height="443"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="50" id="yBa-gK-Mo9" customClass="SWTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yBa-gK-Mo9" id="XSH-7S-h26">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNA-as-Nc8">
+                                                    <rect key="frame" x="182" y="1" width="130" height="40"/>
+                                                    <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFg-fg-OZN">
+                                                    <rect key="frame" x="8" y="1" width="130" height="40"/>
+                                                    <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU2-Fc-bac">
+                                <rect key="frame" x="15" y="28" width="49" height="45"/>
                                 <connections>
-                                    <action selector="back" destination="k3T-ub-LEG" eventType="touchUpInside" id="keH-4r-vIS"/>
+                                    <action selector="pushBackButton" destination="iJt-lR-G3x" eventType="touchUpInside" id="KT8-54-ZSY"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-vm-2GZ">
+                                <rect key="frame" x="15" y="27" width="49" height="49"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Edit.png" translatesAutoresizingMaskIntoConstraints="NO" id="fmZ-vD-zTA">
+                                <rect key="frame" x="255" y="27" width="49" height="49"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gu5-xM-ahO">
+                                <rect key="frame" x="255" y="28" width="49" height="45"/>
+                                <connections>
+                                    <action selector="pushEditButton" destination="iJt-lR-G3x" eventType="touchUpInside" id="bJo-fr-Pm0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QUESTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRh-EV-idL">
+                                <rect key="frame" x="15" y="83" width="130" height="40"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ANSWER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ve-Rj-mKq">
+                                <rect key="frame" x="174" y="83" width="130" height="40"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="editButtonImage" destination="fmZ-vD-zTA" id="dyL-d9-Yww"/>
+                        <outlet property="vocabularyTableView" destination="bUg-dN-LPW" id="Vks-Mg-K7O"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wkv-DM-O5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y65-Kx-FhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-695" y="1087"/>
         </scene>
-        <!--Sinnki View Controller-->
+        <!--New Vocabulary Notebook-->
         <scene sceneID="n3t-kg-8MQ">
             <objects>
-                <viewController id="s18-gU-6fi" customClass="SinnkiViewController" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s18-gU-6fi" customClass="NewVocabularyNotebook" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZdL-Z8-XSY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rd9-Fk-slR"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="I5r-aQ-SWH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" id="ebT-Kh-JJx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackGround.png" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-Kh-JJx">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Createthewordbook.png" id="I3A-ZW-4d4">
-                                <rect key="frame" x="34" y="447" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Createthewordbook.png" translatesAutoresizingMaskIntoConstraints="NO" id="I3A-ZW-4d4">
+                                <rect key="frame" x="34" y="450" width="252" height="47"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SOG-h1-63d">
-                                <rect key="frame" x="34" y="447" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="modoru" destination="s18-gU-6fi" eventType="touchUpInside" id="38t-pc-igk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TsJ-w2-xiz">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsJ-w2-xiz">
                                 <rect key="frame" x="16" y="31" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back" destination="s18-gU-6fi" eventType="touchUpInside" id="8Ok-5Z-2il"/>
+                                    <action selector="pushBackButton" destination="s18-gU-6fi" eventType="touchUpInside" id="0QR-oY-cW0"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" id="mL6-rm-sA2">
-                                <rect key="frame" x="0.0" y="124" width="320" height="207"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                            </pickerView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backbutton.png" id="Yaw-pD-QGp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yaw-pD-QGp">
                                 <rect key="frame" x="16" y="25" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="7VY-R3-PJg">
-                                <rect key="frame" x="0.0" y="371" width="320" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELECT THE SPEAKER LANGUAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzn-LT-U8B">
+                                <rect key="frame" x="25" y="100" width="270" height="40"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="20"/>
+                                <color key="textColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOG-h1-63d">
+                                <rect key="frame" x="34" y="450" width="252" height="47"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushCreateButton" destination="s18-gU-6fi" eventType="touchUpInside" id="bW6-xP-Xof"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mL6-rm-sA2">
+                                <rect key="frame" x="0.0" y="142" width="320" height="140"/>
+                            </pickerView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="languagePickerView" destination="mL6-rm-sA2" id="vKS-8i-InY"/>
-                        <outlet property="textfield" destination="7VY-R3-PJg" id="NhS-4f-cd0"/>
+                        <outlet property="backGroundImage" destination="ebT-Kh-JJx" id="h02-Rg-jFW"/>
+                        <outlet property="languagePickerView" destination="mL6-rm-sA2" id="trp-nj-XND"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d10-UU-EDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-236" y="1087"/>
         </scene>
-        <!--View Controller-->
+        <!--Vocaburaly Notebook-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="VocaburalyNotebook" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T92-ri-6fe"/>
+                        <viewControllerLayoutGuide type="bottom" id="a8G-Cj-X97"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" id="a6P-Qi-nhr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackGround.png" translatesAutoresizingMaskIntoConstraints="NO" id="a6P-Qi-nhr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gsW-XW-Oz1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsW-XW-Oz1">
                                 <rect key="frame" x="254" y="29" width="49" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k8O-3w-NrH"/>
+                                    <action selector="didTapAddButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="wU6-GW-FTe"/>
+                                    <action selector="pushAddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WRH-oD-K6D"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PSz-1c-cm2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSz-1c-cm2">
                                 <rect key="frame" x="15" y="25" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNo-w0-VWJ"/>
-                                    <action selector="back" destination="CyC-QL-feD" eventType="touchUpInside" id="nZL-VE-FHj"/>
+                                    <action selector="pushBackButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBg-1d-Of5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backbutton.png" id="FTl-B7-YRf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="FTl-B7-YRf">
                                 <rect key="frame" x="15" y="25" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="OVt-vi-EMI">
-                                <rect key="frame" x="0.0" y="280" width="320" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PUTIN THE YOUR ANSWER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVt-vi-EMI">
+                                <rect key="frame" x="0.0" y="235" width="320" height="30"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YBd-4K-DSH">
-                                <rect key="frame" x="145" y="434" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.74901960779999999" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
-                                <state key="normal" title="決定">
-                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="PushkousintButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8j3-ve-cep"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rj4-V6-Gdd">
-                                <rect key="frame" x="138" y="472" width="45" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.74901960779999999" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
-                                <state key="normal" title="スコア">
-                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="scoreMake" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzl-YN-OWL"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Word.png" id="fmc-lB-3WN">
-                                <rect key="frame" x="6" y="153" width="306" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Word.png" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-lB-3WN">
+                                <rect key="frame" x="6" y="123" width="306" height="86"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Word.png" id="B2b-2c-i3S">
-                                <rect key="frame" x="7" y="344" width="306" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pIa-4d-eEk">
-                                <rect key="frame" x="92" y="343" width="220" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Addbutton.png" id="GbM-D7-8SM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Addbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="GbM-D7-8SM">
                                 <rect key="frame" x="254" y="25" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IWy-aN-DFl">
-                                <rect key="frame" x="44" y="154" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <connections>
-                                    <action selector="voice2" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQE-8N-Udj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ajr-Y3-cix">
-                                <rect key="frame" x="44" y="345" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <connections>
-                                    <action selector="voice" destination="BYZ-38-t0r" eventType="touchUpInside" id="csq-vG-UEA"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5bu-VV-uAz">
-                                <rect key="frame" x="92" y="153" width="220" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JiO-Ty-TB6">
-                                <rect key="frame" x="0.0" y="280" width="320" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.96862745098039216" green="0.74901960784313726" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="25"/>
-                                <state key="normal" title="次へ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Enter.png" translatesAutoresizingMaskIntoConstraints="NO" id="x19-Jr-AYS">
+                                <rect key="frame" x="34" y="390" width="252" height="47"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Word.png" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-2c-i3S">
+                                <rect key="frame" x="7" y="286" width="306" height="86"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ScoreButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="MfT-4J-c6Q">
+                                <rect key="frame" x="34" y="450" width="252" height="47"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj4-V6-Gdd">
+                                <rect key="frame" x="34" y="450" width="252" height="47"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
+                                <state key="normal">
                                     <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextHide" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIC-w1-62H"/>
+                                    <action selector="didTapScoreButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="0LH-LD-FLU"/>
+                                    <action selector="pushScoreButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="PxF-MB-QrS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiO-Ty-TB6">
+                                <rect key="frame" x="0.0" y="226" width="320" height="47"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushNextQuestionButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogI-CZ-a6N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXO-4Q-WOi">
+                                <rect key="frame" x="88" y="286" width="225" height="86"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWy-aN-DFl">
+                                <rect key="frame" x="44" y="125" width="33" height="30"/>
+                                <connections>
+                                    <action selector="voice1" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBf-Gz-pty"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajr-Y3-cix">
+                                <rect key="frame" x="45" y="287" width="33" height="30"/>
+                                <connections>
+                                    <action selector="voice2" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFi-CB-JY8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NextQuestion.png" translatesAutoresizingMaskIntoConstraints="NO" id="bsy-nl-LEo">
+                                <rect key="frame" x="1" y="226" width="319" height="47"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQa-gb-0bK">
+                                <rect key="frame" x="85" y="123" width="225" height="86"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBd-4K-DSH">
+                                <rect key="frame" x="34" y="390" width="252" height="47"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushEnterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UNN-KZ-gBt"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="decidedButton" destination="YBd-4K-DSH" id="Xgc-Va-oJq"/>
-                        <outlet property="kotae" destination="pIa-4d-eEk" id="gxG-og-AEV"/>
-                        <outlet property="mondai" destination="5bu-VV-uAz" id="zsE-U1-Sis"/>
-                        <outlet property="nextButton" destination="JiO-Ty-TB6" id="gEa-1w-kAg"/>
-                        <outlet property="nyuuryoku" destination="OVt-vi-EMI" id="qZ0-KQ-cHb"/>
-                        <outlet property="scoreButton" destination="rj4-V6-Gdd" id="gDE-oF-ej1"/>
-                        <segue destination="CyC-QL-feD" kind="modal" identifier="toMoveVC" id="UG1-iq-WmV"/>
-                        <segue destination="iIb-4f-udp" kind="modal" identifier="score" id="wSJ-5A-P1G"/>
+                        <outlet property="answerLabel" destination="qXO-4Q-WOi" id="c0N-Y8-DMb"/>
+                        <outlet property="enterButton" destination="YBd-4K-DSH" id="fnj-Ry-BHv"/>
+                        <outlet property="enterButtonImage" destination="x19-Jr-AYS" id="bYI-Jh-Kte"/>
+                        <outlet property="inputAnswer" destination="OVt-vi-EMI" id="kKR-Ry-ggC"/>
+                        <outlet property="nextButton" destination="JiO-Ty-TB6" id="9Sh-gp-hhg"/>
+                        <outlet property="nextButtonImage" destination="bsy-nl-LEo" id="0zn-TG-MHh"/>
+                        <outlet property="questionLabel" destination="hQa-gb-0bK" id="ktJ-GG-7te"/>
+                        <outlet property="scoreButton" destination="rj4-V6-Gdd" id="1kC-Qh-Kb0"/>
+                        <segue destination="CyC-QL-feD" kind="modal" identifier="toMoveVMC" id="nx8-HC-1aA"/>
+                        <segue destination="iIb-4f-udp" kind="modal" identifier="toMoveSC" id="Xkg-qM-CgK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="lKO-aJ-raV">
-                    <connections>
-                        <action selector="tapScreen:" destination="BYZ-38-t0r" id="rgB-1k-OE0"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="199" y="379"/>
+            <point key="canvasLocation" x="200" y="379"/>
         </scene>
-        <!--Make View Controller-->
+        <!--Vocaburaly Make-->
         <scene sceneID="Pl8-wS-Whb">
             <objects>
-                <viewController id="CyC-QL-feD" customClass="MakeViewController" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CyC-QL-feD" customClass="VocaburalyMake" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VsH-Xc-Xjz"/>
+                        <viewControllerLayoutGuide type="bottom" id="HTf-LV-Lva"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jcd-qr-hdF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" id="q9v-Sy-eHy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackGround.png" translatesAutoresizingMaskIntoConstraints="NO" id="q9v-Sy-eHy">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backbutton.png" id="N5Y-n2-L2m">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="N5Y-n2-L2m">
                                 <rect key="frame" x="15" y="25" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Createthewordbook.png" id="abT-zA-whX">
-                                <rect key="frame" x="37" y="447" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackTop.png" translatesAutoresizingMaskIntoConstraints="NO" id="BSp-Gz-ZA1">
+                                <rect key="frame" x="254" y="25" width="49" height="49"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lj0-6V-iFY">
-                                <rect key="frame" x="37" y="447" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Createthewordbook.png" translatesAutoresizingMaskIntoConstraints="NO" id="abT-zA-whX">
+                                <rect key="frame" x="37" y="450" width="252" height="47"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alj-fI-9bY">
+                                <rect key="frame" x="15" y="25" width="49" height="49"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="save" destination="CyC-QL-feD" eventType="touchUpInside" id="2OV-PJ-JDR"/>
+                                    <action selector="pushBackButton" destination="CyC-QL-feD" eventType="touchUpInside" id="JTJ-PW-bSp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Alj-fI-9bY">
-                                <rect key="frame" x="15" y="25" width="49" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back" destination="CyC-QL-feD" eventType="touchUpInside" id="BXs-SS-4QO"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Word.png" id="r48-L5-Gol">
-                                <rect key="frame" x="5" y="153" width="306" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WordDefaults.png" translatesAutoresizingMaskIntoConstraints="NO" id="r48-L5-Gol">
+                                <rect key="frame" x="5" y="125" width="306" height="86"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Word.png" id="lyg-KM-Llh">
-                                <rect key="frame" x="5" y="287" width="305" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="FCq-aI-dY7">
-                                <rect key="frame" x="90" y="153" width="220" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Shk-Bj-FoL">
-                                <rect key="frame" x="90" y="287" width="220" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QLM-G9-Sc5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLM-G9-Sc5">
                                 <rect key="frame" x="42" y="153" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7iu-cO-Pou">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iu-cO-Pou">
                                 <rect key="frame" x="42" y="287" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-6V-iFY">
+                                <rect key="frame" x="37" y="449" width="252" height="47"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushSaveButton" destination="CyC-QL-feD" eventType="touchUpInside" id="etM-lO-Vpa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjO-3G-XoT">
+                                <rect key="frame" x="255" y="25" width="49" height="49"/>
+                                <connections>
+                                    <segue destination="3zy-3p-rFd" kind="modal" id="ki8-mE-Ewz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PUT IN THE QUESTION" textAlignment="natural" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="bHl-NH-OBc">
+                                <rect key="frame" x="85" y="125" width="225" height="86"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="kotaeTextView" destination="Shk-Bj-FoL" id="GvR-gH-IXb"/>
-                        <outlet property="mondaiTextView" destination="FCq-aI-dY7" id="0uF-qk-8x3"/>
+                        <outlet property="backGroundImage" destination="q9v-Sy-eHy" id="S6e-VL-hRS"/>
+                        <outlet property="makeQuestionTextField" destination="bHl-NH-OBc" id="6Hg-Ba-26M"/>
+                        <outlet property="questionCardImage" destination="r48-L5-Gol" id="2HN-Fb-vEA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWb-XZ-bna" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="W1Y-DK-1E4">
                     <connections>
-                        <action selector="tapScreen:" destination="CyC-QL-feD" id="wEe-9p-vrX"/>
+                        <action selector="tapScreen:" destination="CyC-QL-feD" id="Jo1-Fj-c2A"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="625" y="379"/>
+            <point key="canvasLocation" x="655" y="379"/>
         </scene>
-        <!--Kekka View Controller-->
+        <!--Score-->
         <scene sceneID="4xT-L6-eXs">
             <objects>
-                <viewController id="iIb-4f-udp" customClass="KekkaViewController" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iIb-4f-udp" customClass="Score" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T0t-D5-jec"/>
+                        <viewControllerLayoutGuide type="bottom" id="ADm-4F-8RH"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="T5B-LG-CUQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" id="7DA-o3-ibF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackGround.png" translatesAutoresizingMaskIntoConstraints="NO" id="7DA-o3-ibF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Repeat.png" id="fB5-lg-xrq">
-                                <rect key="frame" x="35" y="385" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Repeat.png" translatesAutoresizingMaskIntoConstraints="NO" id="fB5-lg-xrq">
+                                <rect key="frame" x="35" y="390" width="252" height="47"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DFu-3c-6pk">
-                                <rect key="frame" x="35" y="385" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lU-fK-8yS">
+                                <rect key="frame" x="35" y="450" width="252" height="47"/>
                                 <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back" destination="k3T-ub-LEG" eventType="touchUpInside" id="9cc-o3-tAO"/>
-                                    <action selector="quizback" destination="iIb-4f-udp" eventType="touchUpInside" id="I93-mN-uVe"/>
+                                    <action selector="pushTopButton" destination="iIb-4f-udp" eventType="touchUpInside" id="bM1-Hu-wwa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9lU-fK-8yS">
-                                <rect key="frame" x="35" y="447" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back" destination="k3T-ub-LEG" eventType="touchUpInside" id="kKc-ie-o6n"/>
-                                    <action selector="topback" destination="iIb-4f-udp" eventType="touchUpInside" id="BJh-Wg-7se"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの正答率は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c3m-sf-ZK8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたの正答率は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-sf-ZK8">
                                 <rect key="frame" x="35" y="124" width="252" height="177"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="30"/>
                                 <color key="textColor" red="0.87843137250000003" green="0.52156862749999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%です" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eqm-wA-xOv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%です" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqm-wA-xOv">
                                 <rect key="frame" x="136" y="241" width="147" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="30"/>
                                 <color key="textColor" red="0.87843137250000003" green="0.52156862749999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backtothetop.png" id="puM-Ph-Agz">
-                                <rect key="frame" x="35" y="447" width="252" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Backtothetop.png" translatesAutoresizingMaskIntoConstraints="NO" id="puM-Ph-Agz">
+                                <rect key="frame" x="34" y="450" width="252" height="47"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFu-3c-6pk">
+                                <rect key="frame" x="34" y="390" width="252" height="47"/>
+                                <fontDescription key="fontDescription" name="HOKKORI" family="HOKKORI" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushRepeatButton" destination="iIb-4f-udp" eventType="touchUpInside" id="KeU-rT-cQk"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="result" destination="Eqm-wA-xOv" id="das-S6-m8v"/>
+                        <outlet property="scoreLabel" destination="Eqm-wA-xOv" id="A9w-ZG-fXN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGb-oG-8eC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="1087"/>
+            <point key="canvasLocation" x="200" y="1087"/>
         </scene>
     </scenes>
     <resources>
         <image name="Addbutton.png" width="102" height="106"/>
+        <image name="BackGround.png" width="640" height="1136"/>
+        <image name="BackTop.png" width="102" height="105"/>
         <image name="Backbutton.png" width="102" height="105"/>
         <image name="Backtothetop.png" width="506" height="96"/>
         <image name="Createthewordbook.png" width="506" height="96"/>
-        <image name="Default.png" width="640" height="1136"/>
-        <image name="Howtousebutton.png" width="506" height="96"/>
+        <image name="Edit.png" width="102" height="105"/>
+        <image name="Enter.png" width="506" height="96"/>
+        <image name="NextQuestion.png" width="506" height="96"/>
         <image name="Repeat.png" width="506" height="96"/>
-        <image name="Startback.png" width="640" height="1136"/>
+        <image name="ScoreButton.png" width="506" height="96"/>
+        <image name="Startback2.png" width="640" height="1136"/>
         <image name="Startlearning.png" width="506" height="96"/>
         <image name="Word.png" width="610" height="179"/>
-        <image name="Wordbook.png" width="620" height="256"/>
+        <image name="WordDefaults.png" width="610" height="179"/>
+        <image name="WordbookDefaults.png" width="620" height="256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="P5m-GJ-pRj"/>
+    </inferredMetricsTieBreakers>
 </document>

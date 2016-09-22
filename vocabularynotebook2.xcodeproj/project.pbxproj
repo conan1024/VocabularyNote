@@ -7,40 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9508D4C61C78799C009D0930 /* SinnkiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9508D4C51C78799C009D0930 /* SinnkiViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2321077E17A0AF185D40943E /* Pods_vocabularynotebook2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F7A43EDB4614C1AC945BAC /* Pods_vocabularynotebook2.framework */; };
+		2B05BD3296F8D6B303D4F9A4 /* Pods_vocabularynotebook2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDD68875B3F7BD62AD2175E /* Pods_vocabularynotebook2UITests.framework */; };
+		5305E7F6E567AA301DEEA02C /* Pods_vocabularynotebook2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48E17966C55C09A997FB226 /* Pods_vocabularynotebook2Tests.framework */; };
+		95014FDA1CB29A8D00E0B888 /* Startback.png in Resources */ = {isa = PBXBuildFile; fileRef = 95014FD91CB29A8D00E0B888 /* Startback.png */; };
+		95014FDE1CB33AC900E0B888 /* Sound.png in Resources */ = {isa = PBXBuildFile; fileRef = 95014FDD1CB33AC900E0B888 /* Sound.png */; };
+		9508D4C61C78799C009D0930 /* NewVocabularyNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9508D4C51C78799C009D0930 /* NewVocabularyNotebook.swift */; };
+		950C996C1D48F09600ED8AEF /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C99691D48F09600ED8AEF /* Delete.png */; };
+		950C996D1D48F09600ED8AEF /* Edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C996A1D48F09600ED8AEF /* Edit.png */; };
+		950C99701D49638200ED8AEF /* DONE.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C996F1D49638200ED8AEF /* DONE.png */; };
+		950C99741D49A72300ED8AEF /* Edit2.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C99731D49A72300ED8AEF /* Edit2.png */; };
+		950C997C1D49BA8200ED8AEF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C99771D49BA8200ED8AEF /* Default-568h@2x.png */; };
+		950C997D1D49BA8200ED8AEF /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C99781D49BA8200ED8AEF /* Default-667h@2x.png */; };
+		950C997E1D49BA8200ED8AEF /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C99791D49BA8200ED8AEF /* Default-736h@3x.png */; };
+		950C997F1D49BA8200ED8AEF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C997A1D49BA8200ED8AEF /* Default.png */; };
+		950C99801D49BA8200ED8AEF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 950C997B1D49BA8200ED8AEF /* Default@2x.png */; };
+		950C99841D49DDEB00ED8AEF /* VocabularyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950C99831D49DDEB00ED8AEF /* VocabularyList.swift */; };
 		95167C9B1C9D3EDA00841BB8 /* HOKKORI.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95167C9A1C9D3E8C00841BB8 /* HOKKORI.otf */; };
+		9535184D1D4A4D63005A48B1 /* BackTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 9535184C1D4A4D63005A48B1 /* BackTop.png */; };
+		953F46B71CB35F9D00A6DB10 /* Startback2.png in Resources */ = {isa = PBXBuildFile; fileRef = 953F46B61CB35F9D00A6DB10 /* Startback2.png */; };
+		956BB3551D4B58B900946C00 /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 956BB3541D4B58B900946C00 /* Icon-App-60x60@2x.png */; };
+		956BB3571D4B58C100946C00 /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 956BB3561D4B58C100946C00 /* Icon-App-60x60@3x.png */; };
 		957340211C783CDB00D98057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340201C783CDB00D98057 /* AppDelegate.swift */; };
-		957340231C783CDB00D98057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340221C783CDB00D98057 /* ViewController.swift */; };
+		957340231C783CDB00D98057 /* VocaburalyNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340221C783CDB00D98057 /* VocaburalyNotebook.swift */; };
 		957340261C783CDB00D98057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957340241C783CDB00D98057 /* Main.storyboard */; };
 		957340281C783CDB00D98057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957340271C783CDB00D98057 /* Assets.xcassets */; };
-		9573402B1C783CDB00D98057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957340291C783CDB00D98057 /* LaunchScreen.storyboard */; };
 		957340361C783CDB00D98057 /* vocabularynotebook2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340351C783CDB00D98057 /* vocabularynotebook2Tests.swift */; };
 		957340411C783CDB00D98057 /* vocabularynotebook2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957340401C783CDB00D98057 /* vocabularynotebook2UITests.swift */; };
-		9573404F1C783E4900D98057 /* MakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573404E1C783E4900D98057 /* MakeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9573404F1C783E4900D98057 /* VocaburalyMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9573404E1C783E4900D98057 /* VocaburalyMake.swift */; };
 		957340511C78417000D98057 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957340501C78417000D98057 /* AVFoundation.framework */; };
-		95BCAFF41C785561005596AE /* ItirannViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF31C785561005596AE /* ItirannViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		95BCAFF61C78557E005596AE /* KekkaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF51C78557E005596AE /* KekkaViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		95BCAFF81C785616005596AE /* TukaikataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF71C785616005596AE /* TukaikataViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		95BCB0341C7861C2005596AE /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCB0331C7861C2005596AE /* TopViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		95FB37E21CB09A8100BF5D1D /* Addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D11CB09A8100BF5D1D /* Addbutton.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37E31CB09A8100BF5D1D /* Answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D21CB09A8100BF5D1D /* Answer.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37E51CB09A8100BF5D1D /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D41CB09A8100BF5D1D /* Score.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37E61CB09A8100BF5D1D /* Backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D51CB09A8100BF5D1D /* Backbutton.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37E71CB09A8100BF5D1D /* Createthewordbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D61CB09A8100BF5D1D /* Createthewordbook.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37E81CB09A8100BF5D1D /* Createwordbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D71CB09A8100BF5D1D /* Createwordbook.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37E91CB09A8100BF5D1D /* Startlearning.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D81CB09A8100BF5D1D /* Startlearning.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37EA1CB09A8100BF5D1D /* Howtouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D91CB09A8100BF5D1D /* Howtouse.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37EB1CB09A8100BF5D1D /* Backtothetop.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DA1CB09A8100BF5D1D /* Backtothetop.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37EC1CB09A8100BF5D1D /* List.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DB1CB09A8100BF5D1D /* List.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37ED1CB09A8100BF5D1D /* Howtousebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DC1CB09A8100BF5D1D /* Howtousebutton.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37EE1CB09A8100BF5D1D /* Repeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DD1CB09A8100BF5D1D /* Repeat.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37F01CB09A8100BF5D1D /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DF1CB09A8100BF5D1D /* Start.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37F11CB09A8100BF5D1D /* Startback.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37E01CB09A8100BF5D1D /* Startback.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37F21CB09A8100BF5D1D /* Word.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37E11CB09A8100BF5D1D /* Word.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37F41CB09E4000BF5D1D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F31CB09E4000BF5D1D /* back.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37F61CB09F9D00BF5D1D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F51CB09F9D00BF5D1D /* Default.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37F81CB09FFC00BF5D1D /* Wordbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F71CB09FFC00BF5D1D /* Wordbook.png */; settings = {ASSET_TAGS = (); }; };
-		95FB37FA1CB0A5BC00BF5D1D /* Createtheword.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F91CB0A5BC00BF5D1D /* Createtheword.png */; settings = {ASSET_TAGS = (); }; };
+		957C7C961CB2751D0045D840 /* Answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 957C7C951CB2751D0045D840 /* Answer.png */; };
+		957C7C981CB27D6F0045D840 /* WordDefaults.png in Resources */ = {isa = PBXBuildFile; fileRef = 957C7C971CB27D6F0045D840 /* WordDefaults.png */; };
+		957C7C9A1CB27DCC0045D840 /* WordbookDefaults.png in Resources */ = {isa = PBXBuildFile; fileRef = 957C7C991CB27DCC0045D840 /* WordbookDefaults.png */; };
+		957C7C9C1CB2898E0045D840 /* ScoreButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 957C7C9B1CB2898E0045D840 /* ScoreButton.png */; };
+		957C7C9E1CB289990045D840 /* NextQuestion.png in Resources */ = {isa = PBXBuildFile; fileRef = 957C7C9D1CB289990045D840 /* NextQuestion.png */; };
+		957C7CA01CB28B2A0045D840 /* Enter.png in Resources */ = {isa = PBXBuildFile; fileRef = 957C7C9F1CB28B2A0045D840 /* Enter.png */; };
+		958F55161CB34736006A79B6 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F550B1CB34736006A79B6 /* Icon-60.png */; };
+		958F55171CB34736006A79B6 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F550C1CB34736006A79B6 /* Icon-72.png */; };
+		958F55181CB34736006A79B6 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F550D1CB34736006A79B6 /* Icon-72@2x.png */; };
+		958F55191CB34736006A79B6 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F550E1CB34736006A79B6 /* Icon-Small-50.png */; };
+		958F551A1CB34736006A79B6 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F550F1CB34736006A79B6 /* Icon-Small-50@2x.png */; };
+		958F551B1CB34736006A79B6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55101CB34736006A79B6 /* Icon.png */; };
+		958F551C1CB34736006A79B6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55111CB34736006A79B6 /* Icon@2x.png */; };
+		958F551D1CB34736006A79B6 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55121CB34736006A79B6 /* iTunesArtwork.png */; };
+		958F551E1CB34736006A79B6 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55131CB34736006A79B6 /* iTunesArtwork@2x.png */; };
+		958F551F1CB34736006A79B6 /* WORDLEicon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 958F55141CB34736006A79B6 /* WORDLEicon.jpg */; };
+		958F55201CB34736006A79B6 /* WordleIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55151CB34736006A79B6 /* WordleIcon.png */; };
+		958F552E1CB34799006A79B6 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 958F55221CB34799006A79B6 /* Contents.json */; };
+		958F552F1CB34799006A79B6 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55231CB34799006A79B6 /* Icon-40.png */; };
+		958F55301CB34799006A79B6 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55241CB34799006A79B6 /* Icon-40@2x.png */; };
+		958F55311CB34799006A79B6 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55251CB34799006A79B6 /* Icon-40@3x.png */; };
+		958F55331CB34799006A79B6 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55271CB34799006A79B6 /* Icon-60@3x.png */; };
+		958F55341CB34799006A79B6 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55281CB34799006A79B6 /* Icon-76.png */; };
+		958F55351CB34799006A79B6 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F55291CB34799006A79B6 /* Icon-76@2x.png */; };
+		958F55361CB34799006A79B6 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F552A1CB34799006A79B6 /* Icon-83.5@2x.png */; };
+		958F55371CB34799006A79B6 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F552B1CB34799006A79B6 /* Icon-Small.png */; };
+		958F55381CB34799006A79B6 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F552C1CB34799006A79B6 /* Icon-Small@2x.png */; };
+		958F55391CB34799006A79B6 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 958F552D1CB34799006A79B6 /* Icon-Small@3x.png */; };
+		95BCAFF41C785561005596AE /* VocabularyNotebookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF31C785561005596AE /* VocabularyNotebookList.swift */; };
+		95BCAFF61C78557E005596AE /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF51C78557E005596AE /* Score.swift */; };
+		95BCAFF81C785616005596AE /* TukaikataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCAFF71C785616005596AE /* TukaikataViewController.swift */; };
+		95BCB0341C7861C2005596AE /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCB0331C7861C2005596AE /* TopViewController.swift */; };
+		95FB37E21CB09A8100BF5D1D /* Addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D11CB09A8100BF5D1D /* Addbutton.png */; };
+		95FB37E51CB09A8100BF5D1D /* Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D41CB09A8100BF5D1D /* Score.png */; };
+		95FB37E61CB09A8100BF5D1D /* Backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D51CB09A8100BF5D1D /* Backbutton.png */; };
+		95FB37E71CB09A8100BF5D1D /* Createthewordbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D61CB09A8100BF5D1D /* Createthewordbook.png */; };
+		95FB37E81CB09A8100BF5D1D /* Createwordbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D71CB09A8100BF5D1D /* Createwordbook.png */; };
+		95FB37E91CB09A8100BF5D1D /* Startlearning.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37D81CB09A8100BF5D1D /* Startlearning.png */; };
+		95FB37EB1CB09A8100BF5D1D /* Backtothetop.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DA1CB09A8100BF5D1D /* Backtothetop.png */; };
+		95FB37EC1CB09A8100BF5D1D /* List.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DB1CB09A8100BF5D1D /* List.png */; };
+		95FB37ED1CB09A8100BF5D1D /* Howtousebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DC1CB09A8100BF5D1D /* Howtousebutton.png */; };
+		95FB37EE1CB09A8100BF5D1D /* Repeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DD1CB09A8100BF5D1D /* Repeat.png */; };
+		95FB37F01CB09A8100BF5D1D /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37DF1CB09A8100BF5D1D /* Start.png */; };
+		95FB37F21CB09A8100BF5D1D /* Word.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37E11CB09A8100BF5D1D /* Word.png */; };
+		95FB37F41CB09E4000BF5D1D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F31CB09E4000BF5D1D /* back.png */; };
+		95FB37F61CB09F9D00BF5D1D /* BackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F51CB09F9D00BF5D1D /* BackGround.png */; };
+		95FB37F81CB09FFC00BF5D1D /* Wordbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F71CB09FFC00BF5D1D /* Wordbook.png */; };
+		95FB37FA1CB0A5BC00BF5D1D /* Createtheword.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB37F91CB0A5BC00BF5D1D /* Createtheword.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,14 +104,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9508D4C51C78799C009D0930 /* SinnkiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SinnkiViewController.swift; path = ../SinnkiViewController.swift; sourceTree = "<group>"; };
+		0D8974D9C1D3EA4DC6E1FCAC /* Pods-vocabularynotebook2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vocabularynotebook2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-vocabularynotebook2UITests/Pods-vocabularynotebook2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		15F7A43EDB4614C1AC945BAC /* Pods_vocabularynotebook2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vocabularynotebook2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EB160F37C51F137C5E2E06E /* Pods-vocabularynotebook2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vocabularynotebook2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vocabularynotebook2/Pods-vocabularynotebook2.debug.xcconfig"; sourceTree = "<group>"; };
+		895A6CFDB58D19D0A4888483 /* Pods-vocabularynotebook2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vocabularynotebook2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vocabularynotebook2Tests/Pods-vocabularynotebook2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		95014FD91CB29A8D00E0B888 /* Startback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Startback.png; sourceTree = "<group>"; };
+		95014FDD1CB33AC900E0B888 /* Sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sound.png; sourceTree = "<group>"; };
+		9508D4C51C78799C009D0930 /* NewVocabularyNotebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewVocabularyNotebook.swift; path = ../NewVocabularyNotebook.swift; sourceTree = "<group>"; };
+		950C99691D48F09600ED8AEF /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Delete.png; path = Defaults/Delete.png; sourceTree = "<group>"; };
+		950C996A1D48F09600ED8AEF /* Edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Edit.png; path = Defaults/Edit.png; sourceTree = "<group>"; };
+		950C996F1D49638200ED8AEF /* DONE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DONE.png; sourceTree = "<group>"; };
+		950C99731D49A72300ED8AEF /* Edit2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Edit2.png; sourceTree = "<group>"; };
+		950C99771D49BA8200ED8AEF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		950C99781D49BA8200ED8AEF /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		950C99791D49BA8200ED8AEF /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		950C997A1D49BA8200ED8AEF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		950C997B1D49BA8200ED8AEF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		950C99831D49DDEB00ED8AEF /* VocabularyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocabularyList.swift; sourceTree = "<group>"; };
 		95167C9A1C9D3E8C00841BB8 /* HOKKORI.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HOKKORI.otf; sourceTree = "<group>"; };
+		9535184C1D4A4D63005A48B1 /* BackTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackTop.png; sourceTree = "<group>"; };
+		953F46B61CB35F9D00A6DB10 /* Startback2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Startback2.png; sourceTree = "<group>"; };
+		956BB3541D4B58B900946C00 /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		956BB3561D4B58C100946C00 /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
 		9573401D1C783CDB00D98057 /* vocabularynotebook2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocabularynotebook2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957340201C783CDB00D98057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		957340221C783CDB00D98057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		957340221C783CDB00D98057 /* VocaburalyNotebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaburalyNotebook.swift; sourceTree = "<group>"; };
 		957340251C783CDB00D98057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		957340271C783CDB00D98057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9573402A1C783CDB00D98057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9573402C1C783CDB00D98057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		957340311C783CDB00D98057 /* vocabularynotebook2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vocabularynotebook2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		957340351C783CDB00D98057 /* vocabularynotebook2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocabularynotebook2Tests.swift; sourceTree = "<group>"; };
@@ -76,31 +138,61 @@
 		9573403C1C783CDB00D98057 /* vocabularynotebook2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vocabularynotebook2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		957340401C783CDB00D98057 /* vocabularynotebook2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocabularynotebook2UITests.swift; sourceTree = "<group>"; };
 		957340421C783CDB00D98057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9573404E1C783E4900D98057 /* MakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeViewController.swift; path = ../MakeViewController.swift; sourceTree = "<group>"; };
+		9573404E1C783E4900D98057 /* VocaburalyMake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VocaburalyMake.swift; path = ../VocaburalyMake.swift; sourceTree = "<group>"; };
 		957340501C78417000D98057 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		95BCAFF31C785561005596AE /* ItirannViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItirannViewController.swift; path = ../ItirannViewController.swift; sourceTree = "<group>"; };
-		95BCAFF51C78557E005596AE /* KekkaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KekkaViewController.swift; path = ../KekkaViewController.swift; sourceTree = "<group>"; };
+		957C7C951CB2751D0045D840 /* Answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Answer.png; sourceTree = "<group>"; };
+		957C7C971CB27D6F0045D840 /* WordDefaults.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordDefaults.png; sourceTree = "<group>"; };
+		957C7C991CB27DCC0045D840 /* WordbookDefaults.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordbookDefaults.png; sourceTree = "<group>"; };
+		957C7C9B1CB2898E0045D840 /* ScoreButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScoreButton.png; sourceTree = "<group>"; };
+		957C7C9D1CB289990045D840 /* NextQuestion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NextQuestion.png; sourceTree = "<group>"; };
+		957C7C9F1CB28B2A0045D840 /* Enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enter.png; sourceTree = "<group>"; };
+		958F550B1CB34736006A79B6 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		958F550C1CB34736006A79B6 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		958F550D1CB34736006A79B6 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		958F550E1CB34736006A79B6 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		958F550F1CB34736006A79B6 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		958F55101CB34736006A79B6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		958F55111CB34736006A79B6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		958F55121CB34736006A79B6 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		958F55131CB34736006A79B6 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		958F55141CB34736006A79B6 /* WORDLEicon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WORDLEicon.jpg; sourceTree = "<group>"; };
+		958F55151CB34736006A79B6 /* WordleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordleIcon.png; sourceTree = "<group>"; };
+		958F55221CB34799006A79B6 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		958F55231CB34799006A79B6 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		958F55241CB34799006A79B6 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		958F55251CB34799006A79B6 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		958F55271CB34799006A79B6 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		958F55281CB34799006A79B6 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		958F55291CB34799006A79B6 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		958F552A1CB34799006A79B6 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
+		958F552B1CB34799006A79B6 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		958F552C1CB34799006A79B6 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		958F552D1CB34799006A79B6 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		95BCAFF31C785561005596AE /* VocabularyNotebookList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VocabularyNotebookList.swift; path = ../VocabularyNotebookList.swift; sourceTree = "<group>"; };
+		95BCAFF51C78557E005596AE /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Score.swift; path = ../Score.swift; sourceTree = "<group>"; };
 		95BCAFF71C785616005596AE /* TukaikataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TukaikataViewController.swift; path = ../TukaikataViewController.swift; sourceTree = "<group>"; };
 		95BCB0331C7861C2005596AE /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		95FB37D11CB09A8100BF5D1D /* Addbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Addbutton.png; sourceTree = "<group>"; };
-		95FB37D21CB09A8100BF5D1D /* Answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Answer.png; sourceTree = "<group>"; };
 		95FB37D41CB09A8100BF5D1D /* Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Score.png; sourceTree = "<group>"; };
 		95FB37D51CB09A8100BF5D1D /* Backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backbutton.png; sourceTree = "<group>"; };
 		95FB37D61CB09A8100BF5D1D /* Createthewordbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Createthewordbook.png; sourceTree = "<group>"; };
 		95FB37D71CB09A8100BF5D1D /* Createwordbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Createwordbook.png; sourceTree = "<group>"; };
 		95FB37D81CB09A8100BF5D1D /* Startlearning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Startlearning.png; sourceTree = "<group>"; };
-		95FB37D91CB09A8100BF5D1D /* Howtouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Howtouse.png; sourceTree = "<group>"; };
 		95FB37DA1CB09A8100BF5D1D /* Backtothetop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backtothetop.png; sourceTree = "<group>"; };
 		95FB37DB1CB09A8100BF5D1D /* List.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = List.png; sourceTree = "<group>"; };
 		95FB37DC1CB09A8100BF5D1D /* Howtousebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Howtousebutton.png; sourceTree = "<group>"; };
 		95FB37DD1CB09A8100BF5D1D /* Repeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Repeat.png; sourceTree = "<group>"; };
 		95FB37DF1CB09A8100BF5D1D /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
-		95FB37E01CB09A8100BF5D1D /* Startback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Startback.png; sourceTree = "<group>"; };
 		95FB37E11CB09A8100BF5D1D /* Word.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Word.png; sourceTree = "<group>"; };
 		95FB37F31CB09E4000BF5D1D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		95FB37F51CB09F9D00BF5D1D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		95FB37F51CB09F9D00BF5D1D /* BackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackGround.png; sourceTree = "<group>"; };
 		95FB37F71CB09FFC00BF5D1D /* Wordbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wordbook.png; sourceTree = "<group>"; };
 		95FB37F91CB0A5BC00BF5D1D /* Createtheword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Createtheword.png; sourceTree = "<group>"; };
+		BA122D7FE3B6E810483E3CBE /* Pods-vocabularynotebook2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vocabularynotebook2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vocabularynotebook2UITests/Pods-vocabularynotebook2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D48E17966C55C09A997FB226 /* Pods_vocabularynotebook2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vocabularynotebook2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFDD68875B3F7BD62AD2175E /* Pods_vocabularynotebook2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vocabularynotebook2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84606FFBA7AB97EDBA064FD /* Pods-vocabularynotebook2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vocabularynotebook2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-vocabularynotebook2Tests/Pods-vocabularynotebook2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FF2D7B09E9C8BEFFD7A377CE /* Pods-vocabularynotebook2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vocabularynotebook2.release.xcconfig"; path = "Pods/Target Support Files/Pods-vocabularynotebook2/Pods-vocabularynotebook2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				957340511C78417000D98057 /* AVFoundation.framework in Frameworks */,
+				2321077E17A0AF185D40943E /* Pods_vocabularynotebook2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5305E7F6E567AA301DEEA02C /* Pods_vocabularynotebook2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,20 +217,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B05BD3296F8D6B303D4F9A4 /* Pods_vocabularynotebook2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B49BF981D5443A83BE510EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EB160F37C51F137C5E2E06E /* Pods-vocabularynotebook2.debug.xcconfig */,
+				FF2D7B09E9C8BEFFD7A377CE /* Pods-vocabularynotebook2.release.xcconfig */,
+				895A6CFDB58D19D0A4888483 /* Pods-vocabularynotebook2Tests.debug.xcconfig */,
+				F84606FFBA7AB97EDBA064FD /* Pods-vocabularynotebook2Tests.release.xcconfig */,
+				BA122D7FE3B6E810483E3CBE /* Pods-vocabularynotebook2UITests.debug.xcconfig */,
+				0D8974D9C1D3EA4DC6E1FCAC /* Pods-vocabularynotebook2UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8594BF5A4DB5D8910BA81839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15F7A43EDB4614C1AC945BAC /* Pods_vocabularynotebook2.framework */,
+				D48E17966C55C09A997FB226 /* Pods_vocabularynotebook2Tests.framework */,
+				DFDD68875B3F7BD62AD2175E /* Pods_vocabularynotebook2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		957340141C783CDB00D98057 = {
 			isa = PBXGroup;
 			children = (
+				958F550A1CB34736006A79B6 /* icon */,
 				957340501C78417000D98057 /* AVFoundation.framework */,
 				9573401F1C783CDB00D98057 /* vocabularynotebook2 */,
 				957340341C783CDB00D98057 /* vocabularynotebook2Tests */,
 				9573403F1C783CDB00D98057 /* vocabularynotebook2UITests */,
 				9573401E1C783CDB00D98057 /* Products */,
+				3B49BF981D5443A83BE510EB /* Pods */,
+				8594BF5A4DB5D8910BA81839 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,37 +274,49 @@
 		9573401F1C783CDB00D98057 /* vocabularynotebook2 */ = {
 			isa = PBXGroup;
 			children = (
-				95FB37F51CB09F9D00BF5D1D /* Default.png */,
-				95FB37D21CB09A8100BF5D1D /* Answer.png */,
-				95FB37D41CB09A8100BF5D1D /* Score.png */,
+				958F553A1CB34AB1006A79B6 /* Defaults */,
+				95FB37D11CB09A8100BF5D1D /* Addbutton.png */,
+				957C7C951CB2751D0045D840 /* Answer.png */,
+				95FB37F31CB09E4000BF5D1D /* back.png */,
 				95FB37D51CB09A8100BF5D1D /* Backbutton.png */,
-				95FB37D61CB09A8100BF5D1D /* Createthewordbook.png */,
+				95FB37F51CB09F9D00BF5D1D /* BackGround.png */,
+				95FB37DA1CB09A8100BF5D1D /* Backtothetop.png */,
+				9535184C1D4A4D63005A48B1 /* BackTop.png */,
 				95FB37F91CB0A5BC00BF5D1D /* Createtheword.png */,
 				95FB37D71CB09A8100BF5D1D /* Createwordbook.png */,
-				95FB37D81CB09A8100BF5D1D /* Startlearning.png */,
-				95FB37D91CB09A8100BF5D1D /* Howtouse.png */,
-				95FB37DA1CB09A8100BF5D1D /* Backtothetop.png */,
-				95FB37DB1CB09A8100BF5D1D /* List.png */,
+				95FB37D61CB09A8100BF5D1D /* Createthewordbook.png */,
+				950C99691D48F09600ED8AEF /* Delete.png */,
+				950C996F1D49638200ED8AEF /* DONE.png */,
+				950C996A1D48F09600ED8AEF /* Edit.png */,
+				950C99731D49A72300ED8AEF /* Edit2.png */,
+				957C7C9F1CB28B2A0045D840 /* Enter.png */,
 				95FB37DC1CB09A8100BF5D1D /* Howtousebutton.png */,
+				95FB37DB1CB09A8100BF5D1D /* List.png */,
+				957C7C9D1CB289990045D840 /* NextQuestion.png */,
 				95FB37DD1CB09A8100BF5D1D /* Repeat.png */,
-				95FB37F31CB09E4000BF5D1D /* back.png */,
+				95FB37D41CB09A8100BF5D1D /* Score.png */,
+				957C7C9B1CB2898E0045D840 /* ScoreButton.png */,
+				95014FDD1CB33AC900E0B888 /* Sound.png */,
 				95FB37DF1CB09A8100BF5D1D /* Start.png */,
-				95FB37D11CB09A8100BF5D1D /* Addbutton.png */,
-				95FB37E01CB09A8100BF5D1D /* Startback.png */,
+				95014FD91CB29A8D00E0B888 /* Startback.png */,
+				953F46B61CB35F9D00A6DB10 /* Startback2.png */,
+				95FB37D81CB09A8100BF5D1D /* Startlearning.png */,
 				95FB37E11CB09A8100BF5D1D /* Word.png */,
 				95FB37F71CB09FFC00BF5D1D /* Wordbook.png */,
+				957C7C991CB27DCC0045D840 /* WordbookDefaults.png */,
+				957C7C971CB27D6F0045D840 /* WordDefaults.png */,
 				95167C9A1C9D3E8C00841BB8 /* HOKKORI.otf */,
 				957340201C783CDB00D98057 /* AppDelegate.swift */,
 				95BCB0331C7861C2005596AE /* TopViewController.swift */,
 				95BCAFF71C785616005596AE /* TukaikataViewController.swift */,
-				95BCAFF31C785561005596AE /* ItirannViewController.swift */,
-				9508D4C51C78799C009D0930 /* SinnkiViewController.swift */,
-				957340221C783CDB00D98057 /* ViewController.swift */,
-				9573404E1C783E4900D98057 /* MakeViewController.swift */,
-				95BCAFF51C78557E005596AE /* KekkaViewController.swift */,
+				957340221C783CDB00D98057 /* VocaburalyNotebook.swift */,
+				9573404E1C783E4900D98057 /* VocaburalyMake.swift */,
+				95BCAFF31C785561005596AE /* VocabularyNotebookList.swift */,
+				950C99831D49DDEB00ED8AEF /* VocabularyList.swift */,
+				9508D4C51C78799C009D0930 /* NewVocabularyNotebook.swift */,
 				957340241C783CDB00D98057 /* Main.storyboard */,
+				95BCAFF51C78557E005596AE /* Score.swift */,
 				957340271C783CDB00D98057 /* Assets.xcassets */,
-				957340291C783CDB00D98057 /* LaunchScreen.storyboard */,
 				9573402C1C783CDB00D98057 /* Info.plist */,
 			);
 			path = vocabularynotebook2;
@@ -207,6 +340,57 @@
 			path = vocabularynotebook2UITests;
 			sourceTree = "<group>";
 		};
+		958F550A1CB34736006A79B6 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				958F55211CB34799006A79B6 /* AppIcon.appiconset */,
+				958F550B1CB34736006A79B6 /* Icon-60.png */,
+				956BB3541D4B58B900946C00 /* Icon-App-60x60@2x.png */,
+				956BB3561D4B58C100946C00 /* Icon-App-60x60@3x.png */,
+				958F550C1CB34736006A79B6 /* Icon-72.png */,
+				958F550D1CB34736006A79B6 /* Icon-72@2x.png */,
+				958F550E1CB34736006A79B6 /* Icon-Small-50.png */,
+				958F550F1CB34736006A79B6 /* Icon-Small-50@2x.png */,
+				958F55101CB34736006A79B6 /* Icon.png */,
+				958F55111CB34736006A79B6 /* Icon@2x.png */,
+				958F55121CB34736006A79B6 /* iTunesArtwork.png */,
+				958F55131CB34736006A79B6 /* iTunesArtwork@2x.png */,
+				958F55141CB34736006A79B6 /* WORDLEicon.jpg */,
+				958F55151CB34736006A79B6 /* WordleIcon.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		958F55211CB34799006A79B6 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				958F55221CB34799006A79B6 /* Contents.json */,
+				958F55231CB34799006A79B6 /* Icon-40.png */,
+				958F55241CB34799006A79B6 /* Icon-40@2x.png */,
+				958F55251CB34799006A79B6 /* Icon-40@3x.png */,
+				958F55271CB34799006A79B6 /* Icon-60@3x.png */,
+				958F55281CB34799006A79B6 /* Icon-76.png */,
+				958F55291CB34799006A79B6 /* Icon-76@2x.png */,
+				958F552A1CB34799006A79B6 /* Icon-83.5@2x.png */,
+				958F552B1CB34799006A79B6 /* Icon-Small.png */,
+				958F552C1CB34799006A79B6 /* Icon-Small@2x.png */,
+				958F552D1CB34799006A79B6 /* Icon-Small@3x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		958F553A1CB34AB1006A79B6 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				950C99771D49BA8200ED8AEF /* Default-568h@2x.png */,
+				950C99781D49BA8200ED8AEF /* Default-667h@2x.png */,
+				950C99791D49BA8200ED8AEF /* Default-736h@3x.png */,
+				950C997A1D49BA8200ED8AEF /* Default.png */,
+				950C997B1D49BA8200ED8AEF /* Default@2x.png */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,9 +398,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 957340451C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2" */;
 			buildPhases = (
+				CF117DCA47F4335134DD81D8 /* [CP] Check Pods Manifest.lock */,
 				957340191C783CDB00D98057 /* Sources */,
 				9573401A1C783CDB00D98057 /* Frameworks */,
 				9573401B1C783CDB00D98057 /* Resources */,
+				CFB7BBBF6CF3529C9B02F900 /* [CP] Embed Pods Frameworks */,
+				2CFF631A9FE019AC11F54EC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,9 +418,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 957340481C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2Tests" */;
 			buildPhases = (
+				CC909A9E4FF06656606831FD /* [CP] Check Pods Manifest.lock */,
 				9573402D1C783CDB00D98057 /* Sources */,
 				9573402E1C783CDB00D98057 /* Frameworks */,
 				9573402F1C783CDB00D98057 /* Resources */,
+				D4E47208B39D35C93BC32AD9 /* [CP] Embed Pods Frameworks */,
+				AB3A6B26B92465D9F2C9F28B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,9 +439,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9573404B1C783CDB00D98057 /* Build configuration list for PBXNativeTarget "vocabularynotebook2UITests" */;
 			buildPhases = (
+				8D1910EA427413CA5C36C2F6 /* [CP] Check Pods Manifest.lock */,
 				957340381C783CDB00D98057 /* Sources */,
 				957340391C783CDB00D98057 /* Frameworks */,
 				9573403A1C783CDB00D98057 /* Resources */,
+				2C60A333F8737B07E2CAD6F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,13 +466,17 @@
 				TargetAttributes = {
 					9573401C1C783CDB00D98057 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HP79GWATXX;
+						LastSwiftMigration = 0800;
 					};
 					957340301C783CDB00D98057 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 9573401C1C783CDB00D98057;
 					};
 					9573403B1C783CDB00D98057 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 						TestTargetID = 9573401C1C783CDB00D98057;
 					};
 				};
@@ -310,29 +506,68 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950C99801D49BA8200ED8AEF /* Default@2x.png in Resources */,
+				958F551B1CB34736006A79B6 /* Icon.png in Resources */,
+				958F55361CB34799006A79B6 /* Icon-83.5@2x.png in Resources */,
 				95FB37F21CB09A8100BF5D1D /* Word.png in Resources */,
 				95FB37FA1CB0A5BC00BF5D1D /* Createtheword.png in Resources */,
+				958F551A1CB34736006A79B6 /* Icon-Small-50@2x.png in Resources */,
+				958F55381CB34799006A79B6 /* Icon-Small@2x.png in Resources */,
+				958F55311CB34799006A79B6 /* Icon-40@3x.png in Resources */,
+				957C7CA01CB28B2A0045D840 /* Enter.png in Resources */,
 				95FB37E81CB09A8100BF5D1D /* Createwordbook.png in Resources */,
+				958F552F1CB34799006A79B6 /* Icon-40.png in Resources */,
 				95FB37EE1CB09A8100BF5D1D /* Repeat.png in Resources */,
+				957C7C9C1CB2898E0045D840 /* ScoreButton.png in Resources */,
+				956BB3571D4B58C100946C00 /* Icon-App-60x60@3x.png in Resources */,
 				95FB37E51CB09A8100BF5D1D /* Score.png in Resources */,
 				95167C9B1C9D3EDA00841BB8 /* HOKKORI.otf in Resources */,
-				9573402B1C783CDB00D98057 /* LaunchScreen.storyboard in Resources */,
+				958F551E1CB34736006A79B6 /* iTunesArtwork@2x.png in Resources */,
+				953F46B71CB35F9D00A6DB10 /* Startback2.png in Resources */,
+				950C996D1D48F09600ED8AEF /* Edit.png in Resources */,
+				958F55331CB34799006A79B6 /* Icon-60@3x.png in Resources */,
+				957C7C9E1CB289990045D840 /* NextQuestion.png in Resources */,
+				958F55341CB34799006A79B6 /* Icon-76.png in Resources */,
+				958F55351CB34799006A79B6 /* Icon-76@2x.png in Resources */,
+				958F55161CB34736006A79B6 /* Icon-60.png in Resources */,
+				958F55191CB34736006A79B6 /* Icon-Small-50.png in Resources */,
+				950C997C1D49BA8200ED8AEF /* Default-568h@2x.png in Resources */,
 				957340281C783CDB00D98057 /* Assets.xcassets in Resources */,
+				95014FDE1CB33AC900E0B888 /* Sound.png in Resources */,
 				957340261C783CDB00D98057 /* Main.storyboard in Resources */,
+				958F55201CB34736006A79B6 /* WordleIcon.png in Resources */,
+				950C99701D49638200ED8AEF /* DONE.png in Resources */,
+				950C997E1D49BA8200ED8AEF /* Default-736h@3x.png in Resources */,
 				95FB37F81CB09FFC00BF5D1D /* Wordbook.png in Resources */,
+				950C997F1D49BA8200ED8AEF /* Default.png in Resources */,
+				950C996C1D48F09600ED8AEF /* Delete.png in Resources */,
+				956BB3551D4B58B900946C00 /* Icon-App-60x60@2x.png in Resources */,
+				958F551F1CB34736006A79B6 /* WORDLEicon.jpg in Resources */,
 				95FB37E91CB09A8100BF5D1D /* Startlearning.png in Resources */,
 				95FB37E21CB09A8100BF5D1D /* Addbutton.png in Resources */,
+				95014FDA1CB29A8D00E0B888 /* Startback.png in Resources */,
+				958F55391CB34799006A79B6 /* Icon-Small@3x.png in Resources */,
+				957C7C961CB2751D0045D840 /* Answer.png in Resources */,
+				950C997D1D49BA8200ED8AEF /* Default-667h@2x.png in Resources */,
 				95FB37F41CB09E4000BF5D1D /* back.png in Resources */,
-				95FB37F11CB09A8100BF5D1D /* Startback.png in Resources */,
+				957C7C981CB27D6F0045D840 /* WordDefaults.png in Resources */,
 				95FB37E61CB09A8100BF5D1D /* Backbutton.png in Resources */,
 				95FB37E71CB09A8100BF5D1D /* Createthewordbook.png in Resources */,
-				95FB37EA1CB09A8100BF5D1D /* Howtouse.png in Resources */,
+				957C7C9A1CB27DCC0045D840 /* WordbookDefaults.png in Resources */,
+				958F551D1CB34736006A79B6 /* iTunesArtwork.png in Resources */,
 				95FB37F01CB09A8100BF5D1D /* Start.png in Resources */,
 				95FB37EC1CB09A8100BF5D1D /* List.png in Resources */,
-				95FB37E31CB09A8100BF5D1D /* Answer.png in Resources */,
 				95FB37EB1CB09A8100BF5D1D /* Backtothetop.png in Resources */,
+				958F55301CB34799006A79B6 /* Icon-40@2x.png in Resources */,
+				958F55371CB34799006A79B6 /* Icon-Small.png in Resources */,
+				958F55171CB34736006A79B6 /* Icon-72.png in Resources */,
+				950C99741D49A72300ED8AEF /* Edit2.png in Resources */,
+				958F551C1CB34736006A79B6 /* Icon@2x.png in Resources */,
 				95FB37ED1CB09A8100BF5D1D /* Howtousebutton.png in Resources */,
-				95FB37F61CB09F9D00BF5D1D /* Default.png in Resources */,
+				95FB37F61CB09F9D00BF5D1D /* BackGround.png in Resources */,
+				958F55181CB34736006A79B6 /* Icon-72@2x.png in Resources */,
+				9535184D1D4A4D63005A48B1 /* BackTop.png in Resources */,
+				958F552E1CB34799006A79B6 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,18 +587,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C60A333F8737B07E2CAD6F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vocabularynotebook2UITests/Pods-vocabularynotebook2UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CFF631A9FE019AC11F54EC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vocabularynotebook2/Pods-vocabularynotebook2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D1910EA427413CA5C36C2F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB3A6B26B92465D9F2C9F28B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vocabularynotebook2Tests/Pods-vocabularynotebook2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC909A9E4FF06656606831FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF117DCA47F4335134DD81D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFB7BBBF6CF3529C9B02F900 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vocabularynotebook2/Pods-vocabularynotebook2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E47208B39D35C93BC32AD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vocabularynotebook2Tests/Pods-vocabularynotebook2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		957340191C783CDB00D98057 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9508D4C61C78799C009D0930 /* SinnkiViewController.swift in Sources */,
+				9508D4C61C78799C009D0930 /* NewVocabularyNotebook.swift in Sources */,
 				95BCAFF81C785616005596AE /* TukaikataViewController.swift in Sources */,
-				957340231C783CDB00D98057 /* ViewController.swift in Sources */,
-				9573404F1C783E4900D98057 /* MakeViewController.swift in Sources */,
-				95BCAFF41C785561005596AE /* ItirannViewController.swift in Sources */,
+				957340231C783CDB00D98057 /* VocaburalyNotebook.swift in Sources */,
+				950C99841D49DDEB00ED8AEF /* VocabularyList.swift in Sources */,
+				9573404F1C783E4900D98057 /* VocaburalyMake.swift in Sources */,
+				95BCAFF41C785561005596AE /* VocabularyNotebookList.swift in Sources */,
 				957340211C783CDB00D98057 /* AppDelegate.swift in Sources */,
-				95BCAFF61C78557E005596AE /* KekkaViewController.swift in Sources */,
+				95BCAFF61C78557E005596AE /* Score.swift in Sources */,
 				95BCB0341C7861C2005596AE /* TopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,14 +765,6 @@
 				957340251C783CDB00D98057 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		957340291C783CDB00D98057 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9573402A1C783CDB00D98057 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -502,59 +853,73 @@
 		};
 		957340461C783CDB00D98057 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB160F37C51F137C5E2E06E /* Pods-vocabularynotebook2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = vocabularynotebook2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.WORDLE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		957340471C783CDB00D98057 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2D7B09E9C8BEFFD7A377CE /* Pods-vocabularynotebook2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = vocabularynotebook2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.WORDLE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		957340491C783CDB00D98057 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 895A6CFDB58D19D0A4888483 /* Pods-vocabularynotebook2Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = vocabularynotebook2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vocabularynotebook2.app/vocabularynotebook2";
 			};
 			name = Debug;
 		};
 		9573404A1C783CDB00D98057 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84606FFBA7AB97EDBA064FD /* Pods-vocabularynotebook2Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = vocabularynotebook2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vocabularynotebook2.app/vocabularynotebook2";
 			};
 			name = Release;
 		};
 		9573404C1C783CDB00D98057 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA122D7FE3B6E810483E3CBE /* Pods-vocabularynotebook2UITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = vocabularynotebook2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = vocabularynotebook2;
 				USES_XCTRUNNER = YES;
 			};
@@ -562,11 +927,13 @@
 		};
 		9573404D1C783CDB00D98057 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D8974D9C1D3EA4DC6E1FCAC /* Pods-vocabularynotebook2UITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = vocabularynotebook2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.vocabularynotebook2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = vocabularynotebook2;
 				USES_XCTRUNNER = YES;
 			};
