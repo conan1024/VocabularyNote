@@ -31,8 +31,9 @@ class NewVocabularyNotebook: UIViewController {
         
         //キーボードの設定(出てきた時と引っ込んだ時)
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(NewVocabularyNotebook.handleKeyboardWillBeShownNotification(；:)), name: UIKeyboardWillShowNotification, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(NewVocabularyNotebook.handleKeyboardWillBeHiddenNotification(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(NewVocabularyNotebook.handleKeyboardWillBeShownNotification(_:)), name:UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector
+            (NewVocabularyNotebook.handleKeyboardWillBeHiddenNotification(_:)), name:UIKeyboardWillHideNotification, object: nil)
     }
     
     //viewWillAppearの後に行われる処理
@@ -99,7 +100,7 @@ class NewVocabularyNotebook: UIViewController {
 // MARK: - PickerViewDelegate,PickerViewDataSource
 extension NewVocabularyNotebook: UIPickerViewDelegate, UIPickerViewDataSource{
     //PickerViewの設定
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
@@ -107,11 +108,11 @@ extension NewVocabularyNotebook: UIPickerViewDelegate, UIPickerViewDataSource{
         return languageArray.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return languageArray[row] as String
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("列: \(row)")
         print("値: \(languageArray[row])")
         language = languageArray[row]
