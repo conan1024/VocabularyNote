@@ -30,10 +30,14 @@ class NewVocabularyNotebook: UIViewController {
         super.viewWillAppear(animated)
         
         //キーボードの設定(出てきた時と引っ込んだ時)
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(NewVocabularyNotebook.handleKeyboardWillBeShownNotification(_:)), name:UIKeyboardWillShowNotification, object: nil)
-        notificationCenter.addObserver(self, selector: #selector
-            (NewVocabularyNotebook.handleKeyboardWillBeHiddenNotification(_:)), name:UIKeyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: "keyboardWillBeShown:",
+                                               name: NSNotification.Name.UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: "keyboardWillBeHidden:",
+                                               name: NSNotification.Name.UIKeyboardWillHide,
+                                               object: nil)
     }
     
     //viewWillAppearの後に行われる処理
@@ -186,18 +190,18 @@ extension NewVocabularyNotebook {
     
     //配列に保存する
     func saveText(){
-        for ( i, in 0 ..< vocabularyNotebookNameArray.count ) {
+        for i in 0 ..< vocabularyNotebookNameArray.count {
             //重複判定
             if textfield.text == vocabularyNotebookNameArray[i]{
                 NSLog("かぶっています")
                 let alert: UIAlertController = UIAlertController(title: "登録できません", message: "すでに同じ名前の単語帳があります。\n別の名前に変えて下さい。", preferredStyle:  UIAlertControllerStyle.alert)
                 
-                let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:{
+                let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
                     (action: UIAlertAction!) -> Void in
                     print("OK")
                 })
                 alert.addAction(defaultAction)
-                presentViewController(alert, animated: true, completion: nil)
+                present(alert, animated: true, completion: nil)
                 return
             }
         }
