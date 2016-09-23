@@ -30,14 +30,9 @@ class NewVocabularyNotebook: UIViewController {
         super.viewWillAppear(animated)
         
         //キーボードの設定(出てきた時と引っ込んだ時)
-        NotificationCenter.default.addObserver(self,
-                                               selector: "keyboardWillBeShown:",
-                                               name: NSNotification.Name.UIKeyboardWillShow,
-                                               object: nil)
-        NotificationCenter.default.addObserver(self,
-                                               selector: "keyboardWillBeHidden:",
-                                               name: NSNotification.Name.UIKeyboardWillHide,
-                                               object: nil)
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(VocaburalyMake.handleKeyboardWillBeShownNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(VocaburalyMake.handleKeyboardWillBeHiddenNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     //viewWillAppearの後に行われる処理
