@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="h4T-Xu-ZOE">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -17,8 +16,8 @@
             <objects>
                 <viewController id="h4T-Xu-ZOE" customClass="TopViewController" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xVZ-o4-Bah"/>
-                        <viewControllerLayoutGuide type="bottom" id="krx-B6-Out"/>
+                        <viewControllerLayoutGuide type="top" id="8al-ZD-FbP"/>
+                        <viewControllerLayoutGuide type="bottom" id="4mn-tE-06w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JZF-gO-Zoh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -56,8 +55,8 @@
             <objects>
                 <viewController id="3zy-3p-rFd" customClass="VocabularyNotebookList" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CqO-EB-b6a"/>
-                        <viewControllerLayoutGuide type="bottom" id="OM8-V5-mBU"/>
+                        <viewControllerLayoutGuide type="top" id="Ewu-Sb-6uR"/>
+                        <viewControllerLayoutGuide type="bottom" id="gLx-CX-lpE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dXP-iq-iWx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -94,17 +93,11 @@
                                             <frame key="frameInset" width="320" height="132"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WordbookDefaults.png" translatesAutoresizingMaskIntoConstraints="NO" id="mfx-pC-uKk">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="mfx-pC-uKk" secondAttribute="height" multiplier="157:65" id="b3K-c1-CQW"/>
-                                                    </constraints>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WordbookDefaults.png" translatesAutoresizingMaskIntoConstraints="NO" id="mfx-pC-uKk">
+                                                    <frame key="frameInset" minX="3" width="315" height="130.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="mfx-pC-uKk" secondAttribute="bottom" constant="-6" id="Bvr-MY-fwm"/>
-                                                <constraint firstItem="mfx-pC-uKk" firstAttribute="top" secondItem="x2S-SY-5wS" secondAttribute="topMargin" constant="-8" id="l5y-h5-QKp"/>
-                                                <constraint firstItem="mfx-pC-uKk" firstAttribute="leading" secondItem="x2S-SY-5wS" secondAttribute="leadingMargin" priority="100" constant="-5" id="tsC-T3-Tfe"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -143,8 +136,8 @@
             <objects>
                 <viewController id="iJt-lR-G3x" customClass="VocabularyList" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nuX-QJ-Vqj"/>
-                        <viewControllerLayoutGuide type="bottom" id="UUT-pP-KJW"/>
+                        <viewControllerLayoutGuide type="top" id="X4V-Tr-569"/>
+                        <viewControllerLayoutGuide type="bottom" id="MIR-ft-UpD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="etK-3b-XJV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -238,8 +231,8 @@
             <objects>
                 <viewController id="s18-gU-6fi" customClass="NewVocabularyNotebook" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZdL-Z8-XSY"/>
-                        <viewControllerLayoutGuide type="bottom" id="Rd9-Fk-slR"/>
+                        <viewControllerLayoutGuide type="top" id="f4O-Jm-as4"/>
+                        <viewControllerLayoutGuide type="bottom" id="7dp-Kr-CFm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="I5r-aQ-SWH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -299,9 +292,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d10-UU-EDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="nhy-7J-po3">
+                <tapGestureRecognizer id="OGu-Ec-gRa">
                     <connections>
-                        <action selector="tapScreenWithSender:" destination="s18-gU-6fi" id="TPL-tO-EUK"/>
+                        <action selector="tapScreen:" destination="s18-gU-6fi" id="3xj-EO-kF2"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -312,8 +305,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="VocaburalyNotebook" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="T92-ri-6fe"/>
-                        <viewControllerLayoutGuide type="bottom" id="a8G-Cj-X97"/>
+                        <viewControllerLayoutGuide type="top" id="TmS-2W-k2A"/>
+                        <viewControllerLayoutGuide type="bottom" id="uqg-ef-EVW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -436,6 +429,9 @@
                                 <state key="normal">
                                     <color key="titleColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushEnterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Pe-UM-0Id"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -462,8 +458,8 @@
             <objects>
                 <viewController id="CyC-QL-feD" customClass="VocaburalyMake" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VsH-Xc-Xjz"/>
-                        <viewControllerLayoutGuide type="bottom" id="HTf-LV-Lva"/>
+                        <viewControllerLayoutGuide type="top" id="p9A-kH-2wP"/>
+                        <viewControllerLayoutGuide type="bottom" id="9WB-ei-O5Y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jcd-qr-hdF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -553,8 +549,8 @@
             <objects>
                 <viewController id="iIb-4f-udp" customClass="Score" customModule="vocabularynotebook2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="T0t-D5-jec"/>
-                        <viewControllerLayoutGuide type="bottom" id="ADm-4F-8RH"/>
+                        <viewControllerLayoutGuide type="top" id="dhj-cs-ig5"/>
+                        <viewControllerLayoutGuide type="bottom" id="9eq-Ns-Vou"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="T5B-LG-CUQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>

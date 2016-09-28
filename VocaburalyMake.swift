@@ -9,7 +9,7 @@
 import UIKit
 
 class VocaburalyMake: UIViewController{
-
+    
     //単語帳において問題を作る
     @IBOutlet var makeQuestionTextField: UITextField!
     //単語帳において答えを作る
@@ -18,15 +18,17 @@ class VocaburalyMake: UIViewController{
     @IBOutlet var backGroundImage : UIImageView!
     @IBOutlet var questionCardImage : UIImageView!
     var answerCardImage = UIImageView(frame: CGRect(x: 0,y: 0,width: 305,height: 86))
-
+    
     
     // タップ開始時のスクロール位置格納用
     var startPoint : CGPoint = CGPoint()
     
     //AppDelegate.swiftで宣言した変数を使用
     let appDel:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     //選ばれた単語帳の中身
     var selectVocaburaly: String = ""
+    
     //scrollView
     let scrollView = UIScrollView()
     
@@ -59,13 +61,14 @@ class VocaburalyMake: UIViewController{
         
         makeAnswerTextField.placeholder = "PUT IN THE ANSWER"
         makeAnswerTextField.font = UIFont(name: "HOKKORI", size: 20)
+        
         // UITextFieldの表示する位置を設定する.
         makeAnswerTextField.layer.position = CGPoint(x:answerCardImage.frame.origin.x + 192.5 ,y:answerCardImage.frame.origin.y + 43)
         scrollView.addSubview(answerCardImage)
         scrollView.addSubview(makeAnswerTextField)
         
         makeAnswerTextField.tintColor =  UIColor.blue
-
+        
         
         self.view.sendSubview(toBack: scrollView)
         self.view.sendSubview(toBack: answerCardImage)
@@ -74,6 +77,12 @@ class VocaburalyMake: UIViewController{
         
         let myTap = UITapGestureRecognizer(target: self, action: #selector(VocaburalyMake.tapGesture(_:)))
         self.view.addGestureRecognizer(myTap)
+    }
+    
+    func tapGesture(_ sender: UITapGestureRecognizer){
+        self.view.endEditing(true)
+        makeQuestionTextField.resignFirstResponder()
+        makeAnswerTextField.resignFirstResponder()
     }
     
     @IBAction func pushSaveButton(){
@@ -116,15 +125,9 @@ class VocaburalyMake: UIViewController{
         self.dismiss(animated: true, completion: nil)
     }
     
-//    @IBAction func pushTopButton(){
-//        self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
-//    }
-    
-    func tapGesture(_ sender: UITapGestureRecognizer){
-        self.view.endEditing(true)
-        makeQuestionTextField.resignFirstResponder()
-        makeAnswerTextField.resignFirstResponder()
-    }
+    //    @IBAction func pushTopButton(){
+    //        self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    //    }
 }
 
 // MARK: - textfield
@@ -178,7 +181,7 @@ extension VocaburalyMake {
         let userInfo = (notification as NSNotification).userInfo!
         let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let myBoundSize: CGSize = UIScreen.main.bounds.size
-        let txtLimit = makeAnswerTextField.frame.origin.y + makeAnswerTextField.frame.height + 8.0
+        let txtLimit = makeAnswerTextField.frame.origin.y + makeAnswerTextField.frame.height + 08.0
         let kbdLimit = myBoundSize.height - (keyboardScreenEndFrame.size.height)
         
         

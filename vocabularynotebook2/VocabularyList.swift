@@ -92,7 +92,7 @@ class VocabularyList: UIViewController {
         } else {
             vocabularyTableView.isEditing = true
             vocabularyTableView.setEditing(true, animated: true)
-            editButtonImage.image = UIImage(named:"Done.png")
+            editButtonImage.image = UIImage(named:"DONE.png")
             
         }
         

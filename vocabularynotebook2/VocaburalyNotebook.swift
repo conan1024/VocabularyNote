@@ -139,7 +139,7 @@ class VocaburalyNotebook: UIViewController, UIGestureRecognizerDelegate {
     
     
     
-    func pushEnterButton(_ sender : UIButton) {
+    @IBAction func pushEnterButton(_ sender : UIButton) {
         print("カウントの回数")
         appDel.allAnswerNumber += 1
         answerNumber += 1
@@ -384,7 +384,7 @@ extension VocaburalyNotebook{
             
         }else if answerNumber < Int(appDel.allQuestionNumber){
             
-            appDel.correctRate = (correctNumber/Double(appDel.allQuestionNumber))*100.0
+            appDel.correctRate = (correctNumber/Double(appDel.allAnswerNumber))*100.0
             
         }else {
             appDel.correctRate = correctNumber/appDel.allQuestionNumber*100.0

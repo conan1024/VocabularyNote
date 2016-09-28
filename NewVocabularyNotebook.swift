@@ -10,10 +10,16 @@ import UIKit
 
 class NewVocabularyNotebook: UIViewController {
     
-    var textfield = UITextField(frame: CGRect(x: 0, y: 0, width: 320, height: 30))
+    var textField = UITextField(frame: CGRect(x: 0, y: 0, width: 320, height: 30))
     
     @IBOutlet var languagePickerView : UIPickerView!
     @IBOutlet var backGroundImage : UIImageView!
+    
+    // タップ開始時のスクロール位置格納用
+    var startPoint : CGPoint = CGPoint()
+    
+    //入力欄の位置
+    var position : CGFloat = 0
     
     let backgroundScrollView = UIScrollView()
     
@@ -31,15 +37,15 @@ class NewVocabularyNotebook: UIViewController {
         
         //キーボードの設定(出てきた時と引っ込んだ時)
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(VocaburalyMake.handleKeyboardWillBeShownNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(VocaburalyMake.handleKeyboardWillBeHiddenNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(NewVocabularyNotebook.handleKeyboardWillBeShownNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(NewVocabularyNotebook.handleKeyboardWillBeHiddenNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     }
     
     //viewWillAppearの後に行われる処理
     override func viewDidAppear(_ animated: Bool) {
         
         //TextFieldの初期設定
-        textfield.delegate = self
+        textField.delegate = self
         
         //vocabularyNotebookNameArrayを呼び出す
         if((defaults.object(forKey: "openKey")) != nil){
@@ -69,30 +75,29 @@ class NewVocabularyNotebook: UIViewController {
         backgroundScrollView.contentSize = CGSize(width: 250,height: 1000)
         self.view.addSubview(backgroundScrollView)
         
-        textfield.placeholder = "PUT IN THE TITLE"
-        textfield.font = UIFont(name: "HOKKORI", size: 20)
+        textField.placeholder = "PUT IN THE TITLE"
+        textField.font = UIFont(name: "HOKKORI", size: 20)
+        
         // UITextFieldの表示する位置を設定する.
-        textfield.layer.position = CGPoint(x:self.view.bounds.width/2 ,y:languagePickerView.frame.origin.y + 198)
+        textField.layer.position = CGPoint(x:self.view.bounds.width/2 ,y:languagePickerView.frame.origin.y + 198)
+        
+        backgroundScrollView.addSubview(textField)
         
         // 枠を表示する.
-        textfield.borderStyle = UITextBorderStyle.roundedRect
+        textField.borderStyle = UITextBorderStyle.roundedRect
         
-        textfield.tintColor =  UIColor.blue
-        
-        backgroundScrollView.addSubview(textfield)
+        textField.tintColor =  UIColor.blue
         
         self.view.sendSubview(toBack: backgroundScrollView)
         self.view.sendSubview(toBack: backGroundImage)
         
-        let myTap = UITapGestureRecognizer(target: self, action: "tapGesture:")
+        let myTap = UITapGestureRecognizer(target: self, action: #selector(NewVocabularyNotebook.tapGesture(_:)))
         self.view.addGestureRecognizer(myTap)
-        
-        self.view.sendSubview(toBack: backgroundScrollView)
-        self.view.sendSubview(toBack: backGroundImage)
     }
     
-    func tapGesture(sender: UITapGestureRecognizer){
+    func tapGesture(_ sender: UITapGestureRecognizer){
         self.view.endEditing(true)
+        textField.resignFirstResponder()
     }
 }
 
@@ -122,17 +127,17 @@ extension NewVocabularyNotebook: UIPickerViewDelegate, UIPickerViewDataSource{
 extension NewVocabularyNotebook: UIScrollViewDelegate{
     
     //画面の任意の場所を押した時、キーボードが引っ込む動作
-    @IBAction func tapScreen(sender: UITapGestureRecognizer) {
+    @IBAction func tapScreen(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
     
     //キーボードの座標(キーボードがTextFieldとかぶらないように)
-    func handleKeyboardWillBeShownNotification(notification: NSNotification) {
+    func handleKeyboardWillBeShownNotification(_ notification: Notification) {
         
-        let userInfo = notification.userInfo!
+        let userInfo = (notification as NSNotification).userInfo!
         let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let myBoundSize: CGSize = UIScreen.main.bounds.size
-        let txtLimit = textfield.frame.origin.y + textfield.frame.height + 8.0
+        let txtLimit = textField.frame.origin.y + textField.frame.height + 8.0
         let kbdLimit = myBoundSize.height - (keyboardScreenEndFrame.size.height)
         
         
@@ -147,7 +152,7 @@ extension NewVocabularyNotebook: UIScrollViewDelegate{
     }
     
     //キーボードが閉じられるときの呼び出しメソッド
-    func handleKeyboardWillBeHiddenNotification(notification:NSNotification){
+    func handleKeyboardWillBeHiddenNotification(_ notification:Notification){
         backgroundScrollView.contentOffset.y = 0
         //            position = 0
     }
@@ -158,19 +163,20 @@ extension NewVocabularyNotebook: UIScrollViewDelegate{
 extension NewVocabularyNotebook: UITextFieldDelegate{
     
     //UITextFieldが編集された直後に呼ばれるデリゲートメソッド.
-    func textFieldDidBeginEditing(textField: UITextField){
+    func textFieldDidBeginEditing(_ textField: UITextField){
         print("textFieldDidBeginEditing:" + textField.text!)
     }
     
+    
     //UITextFieldが編集終了する直前に呼ばれるデリゲートメソッド.
-    func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         print("textFieldShouldEndEditing:" + textField.text!)
         
         return true
     }
     
     //改行ボタンが押された際に呼ばれるデリゲートメソッド.
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
         return true
@@ -187,7 +193,7 @@ extension NewVocabularyNotebook {
     func saveText(){
         for i in 0 ..< vocabularyNotebookNameArray.count {
             //重複判定
-            if textfield.text == vocabularyNotebookNameArray[i]{
+            if textField.text == vocabularyNotebookNameArray[i]{
                 NSLog("かぶっています")
                 let alert: UIAlertController = UIAlertController(title: "登録できません", message: "すでに同じ名前の単語帳があります。\n別の名前に変えて下さい。", preferredStyle:  UIAlertControllerStyle.alert)
                 
@@ -200,11 +206,11 @@ extension NewVocabularyNotebook {
                 return
             }
         }
-        vocabularyNotebookNameArray.append(self.textfield.text!)
+        vocabularyNotebookNameArray.append(self.textField.text!)
         
         defaults.set(vocabularyNotebookNameArray, forKey: "openKey")
-        defaults.set(language, forKey: self.textfield.text! + "langKey")
-        NSLog("aaaaaaa%@",defaults.object(forKey: self.textfield.text! + "langKey") as! String)
+        defaults.set(language, forKey: self.textField.text! + "langKey")
+        NSLog("aaaaaaa%@",defaults.object(forKey: self.textField.text! + "langKey") as! String)
         defaults.synchronize()
         self.dismiss(animated: true, completion: nil)
     }
